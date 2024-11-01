@@ -4,45 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - My Website</title>
-  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
+  <div class="wrapper">
+    <div id="header"></div>
 
-<div id="header"></div>
+    <main>
+      <h2>Welcome to My Website!</h2>
+      <p>Here’s some main content.</p>
+    </main>
+    
+    <div id="footer"></div>
+  </div>
 
-<main>
-  <h2>Welcome to My Website!</h2>
-  <p>Here’s some main content.</p>
-</main>
+  <script>
+    // Function to load HTML templates
+    function loadTemplate(id, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
 
-<div id="footer"></div>
+    // Load the header component
+    loadTemplate('header', '../src/components/header.html');
+  </script>
+  <script>
+    // Function to load HTML templates
+    function loadTemplate(id, file) {
+      fetch(file)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
 
-<script>
-  // Function to load HTML templates
-  function loadTemplate(id, file) {
-    fetch(file)
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById(id).innerHTML = data;
-      });
-  }
+    // Load the header component
+    loadTemplate('footer', '../src/components/footer.html');
+  </script>
+  <script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('nav');
 
-  // Load the header component
-  loadTemplate('header', '../src/components/header.html');
-</script>
-<script>
-  // Function to load HTML templates
-  function loadTemplate(id, file) {
-    fetch(file)
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById(id).innerHTML = data;
-      });
-  }
-
-  // Load the header component
-  loadTemplate('footer', '../src/components/footer.html');
-</script>
-
+    menuIcon.addEventListener('click', () => {
+        // Toggle the visibility of the navigation menu
+        nav.classList.toggle('mobile-nav');
+    });
+  </script>
 </body>
 </html>
