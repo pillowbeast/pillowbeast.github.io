@@ -15,6 +15,8 @@
   <p>Here’s some main content.</p>
 </main>
 
+<div id="footer"></div>
+
 <script>
   // Function to load HTML templates
   function loadTemplate(id, file) {
@@ -27,6 +29,19 @@
 
   // Load the header component
   loadTemplate('header', '../src/components/header.html');
+</script>
+<script>
+  // Function to load HTML templates
+  function loadTemplate(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  // Load the header component
+  loadTemplate('footer', '../src/components/footer.html');
 </script>
 
 </body>
