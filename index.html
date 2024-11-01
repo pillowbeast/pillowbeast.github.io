@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic HTML template.</p>
+
+<div id="header"></div>
+
+<main>
+  <h2>Welcome to My Website!</h2>
+  <p>Here’s some main content.</p>
+</main>
+
+<script>
+  // Function to load HTML templates
+  function loadTemplate(id, file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      });
+  }
+
+  // Load the header component
+  loadTemplate('header', '../src/components/header.html');
+</script>
+
 </body>
 </html>
