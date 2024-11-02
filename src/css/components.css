@@ -71,15 +71,27 @@ main {
 
 /* =========== Footer =========== */
 footer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+
     background-color: var(--background-color);
     color: var(--text-color);
-    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    border-top: 2px solid var(--text-color);
 }
 
-/* footer-container {
+.footer-container {
+    color: var(--text-color);
 
 }
 
-footer .icon {
+footer img {
+    color: var(--text-color);
 
-} */
+}
