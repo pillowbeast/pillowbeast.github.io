@@ -10,7 +10,7 @@
 }
 
 /* Dark theme variables */
-.dark {
+body.dark {
     --background-color: #121212;
     --text-color: #ffffff;
     --shadow-color: #7f7b82;
