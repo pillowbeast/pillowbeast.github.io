@@ -14,3 +14,22 @@ html {
     line-height: 1.5;
     background-color: var(--background-color);
 }
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color, #ffffff);
+    z-index: 1000;
+}
+
+#wrapper .hidden {
+    display: none;
+}
+
+#wrapper .visible {
+    display: block;
+    opacity: 0;
+}

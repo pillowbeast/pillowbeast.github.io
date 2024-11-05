@@ -9,11 +9,15 @@
   <link rel="apple-touch-icon" href="/src/assets/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/favicon_io/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/src/assets/favicon_io/android-chrome-512x512.png">
-  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="preload stylesheet" href="/src/css/main.css">
   <script type="module" src="/src/js/main.js"></script>
 </head>
 <body>
-  <div class="wrapper">
+
+  <!-- Preloader overlay -->
+  <div id="preloader" class="preloader"></div>
+
+  <div id="wrapper" class="hidden">
     <div id="header"></div>
 
     <main>

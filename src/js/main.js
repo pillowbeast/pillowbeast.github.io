@@ -1,5 +1,6 @@
 import { toggleMenu } from './menu.js';
 import { attachDarkModeToggle } from './darkMode.js';
+import { setupRouting } from './router.js';
 
 function loadTemplate(id, file) {
     return fetch(file)
@@ -9,7 +10,6 @@ function loadTemplate(id, file) {
         });
 }
 
-
 function loadTemplates() {
     return Promise.all([
         loadTemplate('header', '../src/components/header.html'),
@@ -17,17 +17,17 @@ function loadTemplates() {
     ]);
 }
 
+function removePreloader() {
+    const preloader = document.getElementById('preloader');
+    const wrapper = document.getElementById('wrapper');
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark');
-    }
-
-    loadTemplates().then(() => {
-        attachToggles();
-    });
-});
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+        preloader.remove();
+        wrapper.classList.remove('hidden');
+        wrapper.classList.add('visible');
+    }, 500);
+}
 
 function attachToggles() {
     const toggleButton = document.querySelector('.dark-mode-toggle');
@@ -43,3 +43,16 @@ function attachToggles() {
     toggleMenu();
     attachDarkModeToggle(toggleButton, toggleImage);
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark');
+    }
+    loadTemplates().then(() => {
+        attachToggles();
+        setupRouting();
+        removePreloader();
+    });
+});
