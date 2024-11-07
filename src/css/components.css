@@ -116,6 +116,50 @@ main {
     gap: 1rem;
 }
 
+
+/* =========== GallerySlider =========== */
+/* .gallery-slider {
+    position: relative;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-images {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.7s ease;
+}
+
+.slider-images img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-button.prev-button {
+    left: 10px;
+}
+
+.slider-button.next-button {
+    right: 10px;
+} */
+
 /* =========== Footer =========== */
 footer {
     width: 100%;
