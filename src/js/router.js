@@ -1,3 +1,5 @@
+import { handleGalleries } from './galleryslider.js';
+
 export function setupRouting() {
     document.querySelectorAll('a').forEach(link => {
         if (link.hostname === window.location.hostname) {
@@ -29,6 +31,7 @@ async function loadMainContent(url = window.location.href) {
         document.querySelector('main').innerHTML = newMainContent;
 
         applyDarkMode();
+        handleGalleries();
     } catch (error) {
         console.error('Failed to load content:', error);
     }
