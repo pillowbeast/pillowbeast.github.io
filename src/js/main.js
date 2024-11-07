@@ -2,6 +2,7 @@ import { toggleMenu } from './menu.js';
 import { attachDarkModeToggle } from './darkMode.js';
 import { setupRouting } from './router.js';
 import { handleGalleries } from './galleryslider.js';
+import { handleMoveUpButton } from './moveUpButton.js';
 
 function loadTemplate(id, file) {
     return fetch(file)
@@ -52,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loadTemplates().then(() => {
         attachToggles();
+        handleMoveUpButton();
         handleGalleries();
         setupRouting();
         removePreloader();

@@ -96,6 +96,32 @@ header nav a:hover {
     }
 }
 
+/* =========== MoveUpButton =========== */
+#move-up-button {
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 50px;
+    cursor: pointer;
+    rotate: -90deg;
+
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+#move-up-button:hover {
+    color: black;
+}
+
+.not-visible {
+    opacity: 0;
+    cursor: default;
+}
+
 /* =========== Main Content =========== */
 main {
     width: 100%;
@@ -164,7 +190,7 @@ img.faded {
     top: 50%;
     transform: translateY(-50%);
 
-    font-size: 50px;
+    font-size: 5rem;
     color: rgb(177, 175, 175);
     background: none;
     border: none;
@@ -176,7 +202,7 @@ img.faded {
     top: 50%;
     transform: translateY(-50%);
 
-    font-size: 50px;
+    font-size: 5rem;
     color: rgb(177, 175, 175);
     background: none;
     border: none;

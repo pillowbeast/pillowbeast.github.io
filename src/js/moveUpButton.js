@@ -1,5 +1,4 @@
-
-document.addEventListener('DOMContentLoaded', () => {
+export function handleMoveUpButton() {
     const moveUpButton = document.querySelector('#move-up-button');
     const windowHeight = window.innerHeight;
     
@@ -19,4 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('scroll', toggleMoveUpButton);
-});
+}

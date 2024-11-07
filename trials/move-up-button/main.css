@@ -30,10 +30,23 @@ p {
     position: fixed;
     bottom: 100px;
     right: 50px;
+
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 50px;
+    cursor: pointer;
+    rotate: -90deg;
+
+    transition: opacity 0.5s ease;
     z-index: 1000;
 }
 
-.not-visible {
-    visibility: hidden;
+#move-up-button:hover {
+    color: black;
 }
 
+.not-visible {
+    opacity: 0;
+    cursor: default;
+}
