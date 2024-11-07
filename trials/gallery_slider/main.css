@@ -1,0 +1,86 @@
+body {
+    margin: 10px;
+}
+
+#gallery {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#sliderimages {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    overflow: hidden;
+    background: red;
+}
+
+.image-wrapper {
+    width: auto;
+    max-width: 50%;
+
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease-out;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+#sliderimages img {
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    transition: opacity 0.5s ease-out, scale 0.5s ease-out;
+}
+
+img.faded {
+    opacity: 0.5;
+    /* scale: 0.8; */
+}
+
+
+#prev-button {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next-button {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#position-indicator {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.small-circle.active {
+    background-color: black;
+}
