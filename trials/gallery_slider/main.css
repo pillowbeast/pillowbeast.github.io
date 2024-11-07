@@ -18,12 +18,11 @@ body {
     gap: 50px;
 
     overflow: hidden;
-    background: red;
+    background: white;
 }
 
 .image-wrapper {
     width: auto;
-    max-width: 50%;
 
     display: flex;
     justify-content: center;
@@ -40,23 +39,37 @@ body {
 }
 
 img.faded {
-    opacity: 0.5;
-    /* scale: 0.8; */
+    opacity: 0.1;
+    scale: 0.8;
 }
-
 
 #prev-button {
     position: absolute;
-    left: 30px;
+    left: 15%;
     top: 50%;
     transform: translateY(-50%);
+
+    font-size: 50px;
+    color: grey;
+    background: none;
+    border: none;
 }
 
 #next-button {
     position: absolute;
-    right: 30px;
+    right: 15%;
     top: 50%;
     transform: translateY(-50%);
+
+    font-size: 50px;
+    color: grey;
+    background: none;
+    border: none;
+}
+
+#prev-button:hover, #next-button:hover {
+    cursor: pointer;
+    color: black;
 }
 
 #position-indicator {
@@ -79,6 +92,10 @@ img.faded {
     height: 10px;
     border-radius: 10px;
     background-color: grey;
+}
+
+.small-circle:hover {
+    cursor: pointer;
 }
 
 .small-circle.active {

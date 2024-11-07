@@ -118,47 +118,104 @@ main {
 
 
 /* =========== GallerySlider =========== */
-/* .gallery-slider {
+.gallery {
     position: relative;
     width: 100%;
-    max-width: 80rem;
-    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sliderimages {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
     overflow: hidden;
 }
 
-.slider-images {
+.image-wrapper {
+    width: auto;
+
     display: flex;
-    flex-direction: row;
-    transition: transform 0.7s ease;
+    justify-content: center;
+    transition: transform 0.5s ease-out;
+    overflow: hidden;
+    flex: 0 0 auto;
 }
 
-.slider-images img {
-    width: 100%;
+.sliderimages img {
+    width: auto;
     height: auto;
-    object-fit: contain;
-    flex-shrink: 0;
+    max-height: 400px;
+    transition: opacity 0.5s ease-out, scale 0.5s ease-out;
 }
 
-.slider-button {
+img.faded {
+    opacity: 0.1;
+    scale: 0.8;
+}
+
+.prev-button {
     position: absolute;
+    left: 5%;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+
+    font-size: 50px;
+    color: rgb(177, 175, 175);
+    background: none;
     border: none;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
+}
+
+.next-button {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 50px;
+    color: rgb(177, 175, 175);
+    background: none;
+    border: none;
+}
+
+.prev-button:hover, .next-button:hover {
     cursor: pointer;
-    z-index: 1;
+    color: black;
 }
 
-.slider-button.prev-button {
-    left: 10px;
+.position-indicator {
+    position: absolute;
+    width: auto;
+    height: 25px;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.slider-button.next-button {
-    right: 10px;
-} */
+.small-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.small-circle:hover {
+    cursor: pointer;
+}
+
+.small-circle.active {
+    background-color: black;
+}
 
 /* =========== Footer =========== */
 footer {

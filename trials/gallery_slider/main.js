@@ -35,26 +35,24 @@ document.addEventListener('DOMContentLoaded', () => {
         offset = (containerWidth / 2) - (currentImageWidth / 2) - offset;
 
         imageWrappers.forEach((element, idx) => {
-            // const image = element.querySelector('img');
-            // const initialWidth = image.offsetWidth;
-            // console.log(initialWidth);
-            // const actualWidth = image.getBoundingClientRect().width;
-            // console.log(actualWidth);
-        
-            // if (idx === index) {
-            //     element.style.transform = `translateX(${offset}px)`;
-            // } else if (idx === index - 1 || idx === index + 1) {
-            //     const gap = (idx < index ? 1 : -1)*100;
-            //     const currentgap = initialWidth - actualWidth;
-            //     const setablegap = gap - currentgap;
-            //     // const sideOffset = (;
-            //     element.style.transform = `translateX(${offset + setablegap * (idx < index ? -1 : 1)}px)`;
-            //     // element.style.transform = `translateX(${offset + sideOffset * (idx < index ? -1 : 1)}px)`;
-            // } else {
-            //     element.style.transform = `translateX(${offset + (idx - index) * (currentImageWidth + gap)}px)`;
-            // }
-            
-            element.style.transform = `translateX(${offset}px)`;
+            const image = element.querySelector('img');
+            const initialWidth = image.offsetWidth;
+            const scaleFactor = 0.8;
+            const actualWidth = initialWidth*scaleFactor;
+
+            let translateXValue = offset;
+
+            if (idx === index) {
+                element.style.transform = `translateX(${offset}px)`;
+            } else if (idx === index - 1 || idx === index + 1) {
+                const direction = (idx < index ? -1 : 1);
+
+                translateXValue += direction * (actualWidth/2 - initialWidth / 2);
+
+                element.style.transform = `translateX(${translateXValue}px)`;
+            } else {
+                element.style.transform = `translateX(${offset}px)`;
+            }
         });
     }
 
@@ -75,10 +73,22 @@ document.addEventListener('DOMContentLoaded', () => {
         indicatePosition(currentIndex);
     }
 
+    function setIndex(index) {
+        currentIndex = index;
+        changeImageLook(currentIndex);
+        centerImage(currentIndex);
+        indicatePosition(currentIndex);
+    }
+
+
     changeImageLook(currentIndex);
     centerImage(currentIndex);
     indicatePosition(currentIndex);
 
     document.getElementById('prev-button').addEventListener('click', () => slide(-1));
     document.getElementById('next-button').addEventListener('click', () => slide(1));
+    
+    circles.forEach((element, idx) => {
+        element.addEventListener('click', () => setIndex(idx));
+    });
 });

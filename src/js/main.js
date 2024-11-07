@@ -1,7 +1,7 @@
 import { toggleMenu } from './menu.js';
 import { attachDarkModeToggle } from './darkMode.js';
-// import { attachGallerySliderButtons } from './galleryslider.js';
 import { setupRouting } from './router.js';
+import { handleGalleries } from './galleryslider.js';
 
 function loadTemplate(id, file) {
     return fetch(file)
@@ -43,7 +43,6 @@ function attachToggles() {
 
     toggleMenu();
     attachDarkModeToggle(toggleButton, toggleImage);
-    // attachGallerySliderButtons();
 }
 
 
@@ -53,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loadTemplates().then(() => {
         attachToggles();
+        handleGalleries();
         setupRouting();
         removePreloader();
     });
