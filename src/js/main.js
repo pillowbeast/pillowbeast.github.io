@@ -14,8 +14,8 @@ function loadTemplate(id, file) {
 
 function loadTemplates() {
     return Promise.all([
-        loadTemplate('header', '../src/components/header.html'),
-        loadTemplate('footer', '../src/components/footer.html')
+        loadTemplate('header', '/src/components/header.html'),
+        loadTemplate('footer', '/src/components/footer.html')
     ]);
 }
 

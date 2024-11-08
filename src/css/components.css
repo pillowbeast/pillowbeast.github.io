@@ -5,7 +5,7 @@ header {
     align-items: center;
     
     font-weight: 700;
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 5px solid var(--text-color);
 }
 
 .header-container {
@@ -307,8 +307,36 @@ img.faded {
 
 .book-report-button:hover {
     color: black;
-} 
+}
 
+/* =========== Book-Review =========== */
+.book-metadata-tile {
+    width: 100%;
+    height: 480px;
+    padding: 24px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.book-img {
+    width: 50%;
+    overflow: hidden;
+}
+
+.book-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-metadata-container {
+    width: 50%;
+}
+
+.book-blurp {
+    font-style: italic;
+}
 
 /* =========== Footer =========== */
 footer {
@@ -319,7 +347,7 @@ footer {
     justify-content: center;
 
     font-weight: 700;
-    border-top: 2px solid var(--text-color);
+    border-top: 5px solid var(--text-color);
 }
 
 .footer-container {
