@@ -8,5 +8,4 @@ export function attachDarkModeToggle(toggleButton, toggleImage) {
 
         localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
     });
-
 }
