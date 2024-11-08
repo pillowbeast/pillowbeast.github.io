@@ -68,7 +68,7 @@ export function handleGalleries() {
                 }
             });
         }
-
+        
         function slide(direction) {
             currentIndex = (currentIndex + direction + imageWrappers.length) % imageWrappers.length;
             changeImageLook(currentIndex);
@@ -82,7 +82,6 @@ export function handleGalleries() {
             centerImage(currentIndex);
             indicatePosition(currentIndex);
         }
-
 
         changeImageLook(currentIndex);
         centerImage(currentIndex);

@@ -99,7 +99,7 @@ header nav a:hover {
 /* =========== MoveUpButton =========== */
 #move-up-button {
     position: fixed;
-    bottom: 130px;
+    bottom: 170px;
     right: 50px;
 
     background: none;
@@ -117,9 +117,25 @@ header nav a:hover {
     color: black;
 }
 
-.not-visible {
-    opacity: 0;
-    cursor: default;
+/* =========== MoveDownButton =========== */
+#move-down-button {
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+
+    background: none;
+    border: none;
+    color: grey;
+    font-size: 50px;
+    cursor: pointer;
+    rotate: -90deg;
+
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+#move-down-button:hover {
+    color: black;
 }
 
 /* =========== Main Content =========== */
@@ -244,10 +260,6 @@ img.faded {
 }
 
 /* =========== Book Report Summary =========== */
-.reverse {
-    flex-direction: row-reverse;
-}
-
 .book-report-tile {
     width: 100%;
     max-height: 480px;
@@ -275,7 +287,7 @@ img.faded {
     text-overflow: ellipsis;
 }
 
-.book-report-metadata, .book-report-summary, .book-report-button-container {
+.book-report-metadata, .book-report-a-container {
     padding-left: 24px;
 }
 
@@ -299,13 +311,13 @@ img.faded {
     object-fit:  cover;
 }
 
-.book-report-button {
+.book-report-a {
     background: none;
     border: none;
     color: grey;
 }
 
-.book-report-button:hover {
+.book-report-a:hover {
     color: black;
 }
 
@@ -337,6 +349,200 @@ img.faded {
 .book-blurp {
     font-style: italic;
 }
+
+/* =========== Recipe Summary =========== */
+.recipe-tile {
+    width: 100%;
+    max-height: 480px;
+    padding: 10px;
+
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.recipe-container1 {
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recipe-summary {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    text-overflow: ellipsis;
+}
+
+.recipe-container2 {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.recipe-img img {
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+}
+
+.recipe-a {
+    background: none;
+    border: none;
+    color: grey;
+}
+
+.recipe-a:hover {
+    color: black;
+}
+
+/* =========== Recipe =========== */
+.recipe-metadata-tile {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-story {
+    padding: 10px;
+    font-style: italic;
+}
+
+.recipe {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recipe-ingredients-container {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgb(216, 216, 216);
+    
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.ingredients {
+    width: 40%;
+    padding: 20px;
+}
+
+.recipe-ingredients-img {
+    width: 60%;
+    margin: 20px;
+    overflow: hidden;
+
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-ingredients-img img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+.recipe-steps {
+    width: 100%;
+    margin: 10px;
+}
+
+.recipe-steps ol {
+    padding-left: 60px;
+}
+
+
+/* =========== Banner-Image =========== */
+.banner-img {
+    height: 10vh;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.banner-img.center-img img {
+    object-position: center;
+}
+
+.banner-img.top-img img {
+    object-position: top;
+}
+
+.banner-img.bottom-img img {
+    object-position: bottom;
+}
+
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: saturate(0.5);
+    cursor: default;
+}
+
+.banner-img img:hover {
+    scale: 1.0;
+}
+
+/* =========== Image Overlay =========== */
+.image-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    filter: saturate(1.0);
+    scale: 1.0;
+}
+
+.image-overlay img:hover {
+    scale: 1.0;
+}
+
 
 /* =========== Footer =========== */
 footer {

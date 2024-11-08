@@ -20,7 +20,7 @@ h3 {
   font-weight: 600;
 }
 
-p, li {
+p, li, ol {
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
@@ -79,4 +79,28 @@ hr {
 .full-width-hr {
   margin-left: calc(-50vw + 50% + 20px);
   margin-right: calc(-50vw + 50% + 20px);
+}
+
+img {
+  transition: filter 0.3s ease, scale 0.5s ease;
+  filter: saturate(0.7);
+  cursor: pointer;
+}
+
+img:hover {
+  filter: saturate(1.0);
+  scale: 1.05;
+}
+
+.not-visible {
+  opacity: 0;
+  cursor: default;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }

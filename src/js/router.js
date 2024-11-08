@@ -1,4 +1,6 @@
 import { handleGalleries } from './galleryslider.js';
+import { handleMoveButtons } from './moveButtons.js';
+import { handleOverlay } from './overlay.js';
 
 export function setupRouting() {
     document.querySelectorAll('a').forEach(link => {
@@ -32,6 +34,8 @@ async function loadMainContent(url = window.location.href) {
 
         applyDarkMode();
         handleGalleries();
+        handleOverlay();
+        handleMoveButtons();
     } catch (error) {
         console.error('Failed to load content:', error);
     }

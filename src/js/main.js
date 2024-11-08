@@ -2,7 +2,8 @@ import { toggleMenu } from './menu.js';
 import { attachDarkModeToggle } from './darkMode.js';
 import { setupRouting } from './router.js';
 import { handleGalleries } from './galleryslider.js';
-import { handleMoveUpButton } from './moveUpButton.js';
+import { handleMoveButtons } from './moveButtons.js';
+import { handleOverlay } from './overlay.js';
 
 function loadTemplate(id, file) {
     return fetch(file)
@@ -27,7 +28,7 @@ function removePreloader() {
     setTimeout(() => {
         preloader.remove();
         wrapper.classList.remove('hidden');
-        wrapper.classList.add('visible');
+        wrapper.classList.add('shown');
     }, 500);
 }
 
@@ -53,8 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loadTemplates().then(() => {
         attachToggles();
-        handleMoveUpButton();
+        handleMoveButtons();
         handleGalleries();
+        handleOverlay();
         setupRouting();
         removePreloader();
     });

@@ -29,7 +29,6 @@ html {
     display: none;
 }
 
-#wrapper .visible {
+#wrapper .shown {
     display: block;
-    opacity: 0;
 }
