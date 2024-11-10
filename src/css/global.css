@@ -104,3 +104,15 @@ img:hover {
 .reverse {
   flex-direction: row-reverse;
 }
+
+.height-10 {
+  height: 10vh;
+}
+
+.height-20 {
+  height: 20vh;
+}
+
+.height-40 {
+  height: 40vh;
+}
