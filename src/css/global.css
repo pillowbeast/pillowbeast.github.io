@@ -20,7 +20,7 @@ h3 {
   font-weight: 600;
 }
 
-p, li, ol {
+p, li, ol, i {
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
@@ -115,4 +115,13 @@ img:hover {
 
 .height-40 {
   height: 40vh;
+}
+
+.flowing-text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.no-line-height {
+  line-height: 1.0;
 }
