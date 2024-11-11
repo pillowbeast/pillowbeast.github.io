@@ -638,7 +638,7 @@ img.faded {
     grid-row: 2;
 }
 
-/* =========== Inline-Image =========== */
+/* =========== Blog Example Page =========== */
 .blog-metadata {
     width: 100%;
 
@@ -647,6 +647,34 @@ img.faded {
     gap: 10px;
     justify-content: start;
 }
+
+/* =========== Retro Example Page =========== */
+.retro-title-container {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-and-forth-button-container {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.retro-metadata {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: start;
+}
+
+
 
 
 /* =========== Inline-Image =========== */
