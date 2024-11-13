@@ -27,6 +27,10 @@ p, li, ol, i {
   line-height: 1.8;
 }
 
+li {
+  padding-left: 36px;
+}
+
 b {
   font-size: 1.8rem;
   font-weight: 600;
@@ -83,12 +87,10 @@ hr {
 
 img {
   transition: filter 0.3s ease, scale 0.5s ease;
-  filter: saturate(0.7);
   cursor: pointer;
 }
 
 img:hover {
-  filter: saturate(1.0);
   scale: 1.05;
 }
 
@@ -117,7 +119,7 @@ img:hover {
   height: 40vh;
 }
 
-.flowing-text {
+.flowing-text p {
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -128,4 +130,16 @@ img:hover {
 
 .no-overlay {
   cursor: default;
+}
+
+.button {
+  font-size: 3.6rem;
+  color: rgb(177, 175, 175);
+  background: none;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: black;
 }

@@ -4,7 +4,7 @@ export function attachDarkModeToggle(toggleButton, toggleImage) {
         document.body.classList.toggle('dark');
         const isDarkMode = document.body.classList.contains('dark');
 
-        toggleImage.src = isDarkMode ? "/src/assets/icons/moon-solid.svg" : "/src/assets/icons/sun-solid.svg";
+        toggleImage.src = isDarkMode ? "/src/assets/icons/moon.svg" : "/src/assets/icons/sun.svg";
 
         localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
     });

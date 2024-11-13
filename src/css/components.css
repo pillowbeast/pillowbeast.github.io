@@ -28,8 +28,14 @@ header {
 }
 
 .header-title button {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height:2.4rem;
+}
+
+.header-title img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
   
 header nav {
@@ -294,6 +300,14 @@ img.faded {
 .book-report-container2 {
     width: 38%;
 
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%; */
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -328,11 +342,26 @@ img.faded {
     padding: 24px;
 
     display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
     gap: 20px;
 }
 
+.book-img-container {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .book-img {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -342,12 +371,32 @@ img.faded {
     object-fit: cover;
 }
 
-.book-metadata-container {
-    width: 50%;
+/* .book-metadata-container {
+    width: 40%;
+} */
+
+.book-blurp p {
+    padding-left: 12px;
+    font-style: italic;
 }
 
-.book-blurp {
-    font-style: italic;
+.book-review p {
+    padding-left: 12px;
+}
+
+.TLDR {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 24px;
+}
+
+.book-details {
+    padding-left: 12px;
+}
+
+.book-details h3 {
+    color: var(--shadow-color);
 }
 
 /* =========== Recipe Summary =========== */
@@ -367,6 +416,10 @@ img.faded {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.recipe-metadata, .recipe-a-container  {
+    padding-left: 24px;
 }
 
 .recipe-summary {
@@ -420,7 +473,6 @@ img.faded {
 
 .recipe-story {
     padding: 10px;
-    font-style: italic;
 }
 
 .recipe {
@@ -429,16 +481,45 @@ img.faded {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+}
+
+.recipe-extra-data-container {
+    width: 75%;
+    height: 80px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--shadow-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.extra-data {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.extra-data img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .recipe-ingredients-container {
     width: 100%;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: rgb(216, 216, 216);
-    
+    padding: 24px;
+    margin: 24px;
+
+    box-shadow: 4px 4px 12px var(--shadow-color);
+
     display: flex;
     align-items: start;
     gap: 10px;
@@ -447,7 +528,29 @@ img.faded {
 .ingredients {
     width: 40%;
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
+
+.ingredient {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.ingredient-amount {
+    width: 30%;
+    text-align: right;
+}
+
+.ingredient-name {
+    width: 70%;
+    text-align: left;
+}
+
 
 .recipe-ingredients-img {
     width: 60%;
@@ -481,11 +584,9 @@ img.faded {
     max-width: 100%;
     max-height: 720px;
     padding: 24px;
-    margin-bottom: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 24px;
 
-    border: 2px solid black;
+    box-shadow: 4px 4px 12px var(--shadow-color);
     
     display: flex;
     flex-direction: column;
@@ -499,10 +600,12 @@ img.faded {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
 }
 
 .project-container1 img {
     width: 100%;
+    padding: 24px;
     object-fit: cover;
 }
 
@@ -548,11 +651,9 @@ img.faded {
 
 .project-page-description {
     width: 100%;
-    /* padding-left: 24px; */
     
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 /* =========== Blogs =========== */
@@ -649,9 +750,16 @@ img.faded {
 }
 
 /* =========== Retro Example Page =========== */
+.retro-top-container {
+    width: 100%;
+    padding-bottom: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .retro-title-container {
     width: 100%;
-    height: 70px;
 
     display: flex;
     flex-direction: row;
@@ -661,8 +769,11 @@ img.faded {
 
 .back-and-forth-button-container {
     position: relative;
-    width: 20%;
     height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
 .retro-metadata {
@@ -672,6 +783,32 @@ img.faded {
     flex-direction: row;
     gap: 24px;
     justify-content: start;
+}
+
+.retro-type {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.retro-type h2 {
+    padding-bottom: 4px;
+}
+
+.retro-type p {
+    padding-left: 12px;
+}
+
+.retro-type-content {
+    padding-left: 24px;
+}
+
+.retro-type-content h3 {
+    padding-top: 8px;
+    color: var(--shadow-color);
 }
 
 /* =========== About Page =========== */

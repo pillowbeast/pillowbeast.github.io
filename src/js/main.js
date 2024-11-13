@@ -38,9 +38,9 @@ function attachToggles() {
 
     if (localStorage.getItem('darkMode') === 'enabled') {
         document.body.classList.add('dark');
-        toggleImage.src = "/src/assets/icons/moon-solid.svg";
+        toggleImage.src = "/src/assets/icons/moon.svg";
     } else {
-        toggleImage.src = "/src/assets/icons/sun-solid.svg";
+        toggleImage.src = "/src/assets/icons/sun.svg";
     }
 
     toggleMenu();
