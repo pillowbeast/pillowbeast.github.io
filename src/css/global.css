@@ -125,3 +125,7 @@ img:hover {
 .no-line-height {
   line-height: 1.0;
 }
+
+.no-overlay {
+  cursor: default;
+}

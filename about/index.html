@@ -3,31 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About • pillowbeast</title>
+  <title>pillowbeast</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon_io/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/src/assets/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/favicon_io/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/src/assets/favicon_io/android-chrome-512x512.png">
-  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="preload stylesheet" href="/src/css/main.css" as="style">
   <script type="module" src="/src/js/main.js"></script>
 </head>
 <body>
-
   <!-- Preloader overlay -->
   <div id="preloader" class="preloader"></div>
+  <button id="move-up-button" class="not-visible">❯</button>
+  <button id="move-down-button" class="not-visible">❮</button>
 
   <div id="wrapper" class="hidden">
     <div id="header"></div>
 
     <main>
       <div class="main-container">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nibh felis. Vivamus facilisis sit amet velit id tincidunt. Morbi dictum, sem in luctus ornare, augue orci pulvinar felis, at egestas est leo et turpis. Sed efficitur risus sit amet dui ullamcorper, vitae mollis mi auctor. Nunc consequat ultricies tortor a bibendum. Integer mi diam, auctor ut leo at, venenatis convallis erat. Integer malesuada, massa id auctor porttitor, justo enim blandit nulla, ac rhoncus nunc turpis et elit. Duis imperdiet varius magna ac congue. Phasellus ut metus ac tellus ullamcorper elementum. Curabitur in purus non tellus sodales auctor dignissim sit amet arcu. Suspendisse diam massa, pellentesque vel nisi in, bibendum malesuada turpis. Praesent non dui in metus placerat pulvinar vel nec risus. Sed nec consectetur urna. Morbi nec rhoncus velit. Nulla at sagittis mauris, ut elementum lorem. Quisque vitae tempus dolor.</p>
-        <p>Aenean eros velit, ullamcorper sed libero non, laoreet blandit tortor. Curabitur posuere velit nisl, vel malesuada tortor ullamcorper et. Mauris tempor auctor bibendum. Donec pharetra urna at nunc tincidunt, sed tincidunt orci tempus. In eu auctor metus. Integer id elementum turpis. Proin commodo sed nunc at pharetra. Maecenas mi nunc, dapibus et posuere nec, consectetur sit amet sapien. Ut et risus posuere, fringilla nisl in, tempor dolor. Integer eu mauris vitae nulla ornare consequat non vel dolor. Ut pellentesque risus ut eros mattis, blandit fringilla ex congue. Mauris vel arcu rutrum, vulputate lectus nec, sollicitudin quam. Mauris pellentesque elementum sem eu feugiat.</p>
+        <div class="about-metadata-container">
+          <div class="about-img">
+            <img src="/src/assets/images/20221012_AmivContact_IzedinFotografie_458.jpg" alt="">
+          </div>
+          <div class="about-metadata">
+            <h2>Yannik Werner</h2>
+            <p>Binzmühlestrasse 14</p>
+            <p>6343, Rotkreuz</p>
+            <br>
+            <p>+41 78 775 74 42</p>
+            <p>yannik.werner@yahoo.de</p>
+          </div>
+        </div>
+        <hr>
+        <p>Below you can find select Projects and Career Steps from my life. Have a look at my current CV at the bottom of the page.</p>
+        <div class="timeline-container">
+          <div class="line-and-dots">
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry left">
+                <div class="timeline-entry-content">
+                    <h3>Internship at ESA</h3>
+                    <p>Something I want to tell the world...</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry right">
+                  <div class="timeline-entry-content">
+                      <h3>Semester Project at RSL</h3>
+                      <p>Something I want to tell the world...</p>
+                  </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry left">
+                  <div class="timeline-entry-content">
+                      <h3>Another Project</h3>
+                      <p>Something I want to tell the world...</p>
+                  </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry right">
+                <div class="timeline-entry-content">
+                    <h3>Internship at ESA</h3>
+                    <p>Something I want to tell the world...</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry left">
+                  <div class="timeline-entry-content">
+                      <h3>Semester Project at RSL</h3>
+                      <p>Something I want to tell the world...</p>
+                  </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry right">
+                  <div class="timeline-entry-content">
+                      <h3>Another Project</h3>
+                      <p>Something I want to tell the world...</p>
+                  </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry left">
+                  <div class="timeline-entry-content">
+                      <h3>Another Project</h3>
+                      <p>Something I want to tell the world...</p>
+                  </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry right">
+                <div class="timeline-entry-content">
+                    <h3>Internship at ESA</h3>
+                    <p>Something I want to tell the world...</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-entry left">
+                  <div class="timeline-entry-content">
+                      <h3>Semester Project at RSL</h3>
+                      <p>Something I want to tell the world...</p>
+                  </div>
+              </div>
+            </div>
+            <!-- Add more entries as needed -->
+            <div class="timeline-item">
+              <div class="last-dot">
+                <div class="CV" id="jump-to-here">
+                  <a href="/src/assets/documents/CV_YW_2024_10.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="/src/assets/icons/file-solid.svg" alt="Download CV" class="no-overlay">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
+    <div id="image-overlay" class="image-overlay">
+      <img id="overlay-image" src="" alt="Fullscreen Image">
+    </div>
+    
     <div id="footer"></div>
   </div>
 </body>
