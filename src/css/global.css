@@ -5,26 +5,38 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* =========== Writing =========== */
 h1 {
-  font-size: 3.6rem;
-  font-weight: 600;
+  font-size: 12.2rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+h1::after {
+  content: ".";
+  color: var(--light-olive-green);
 }
 
 h2 {
-  font-size: 3.0rem;
+  font-size: 6.3rem;
   font-weight:600;
-}  
+  overflow: hidden;
+}
+
+h2::after {
+  content: ".";
+  color: var(--light-purple);
+}
 
 h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 3.9rem;
+  font-weight: 500;
 }
 
 p, li, ol, i {
-  font-size: 1.8rem;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  line-height: 1.8;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 li {
@@ -32,26 +44,71 @@ li {
 }
 
 b {
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  line-height: 1.8;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 a {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: var(--text-color);
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6.3rem;
+    font-weight: 700;
+    overflow: hidden;
+  }
+  
+  h1::after {
+    content: ".";
+    color: var(--light-olive-green);
+  }
+  
+  h2 {
+    font-size: 3.9rem;
+    font-weight:600;
+  }  
+  
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  
+  p, li, ol, i {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  li {
+    padding-left: 36px;
+  }
+  
+  b {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  
+  a {
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+
+/* =========== Misc =========== */
 button {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
 
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   background: none;
   border: none;
 }
@@ -63,11 +120,7 @@ button:hover {
 button img {
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
-}
-
-.dark .icon {
-  filter: invert(1) brightness(1.2);
+  object-fit: contain;
 }
 
 hr {
@@ -75,9 +128,9 @@ hr {
   margin-right: -20px;
   border: none;
   height: 2px;
-  background-color: var(--text-color); /* Set desired color */
-  margin-top: 1rem; /* Optional: spacing above */
-  margin-bottom: 1rem; /* Optional: spacing below */
+  background-color: var(--light-olive-green);
+  margin-top: 3.9rem;
+  margin-bottom: 3.9rem;
 }
 
 .full-width-hr {
@@ -92,6 +145,11 @@ img {
 
 img:hover {
   scale: 1.05;
+}
+
+/* =========== Attributes =========== */
+.dark .icon img{
+  filter: invert(1) brightness(1.2);
 }
 
 .not-visible {
@@ -132,14 +190,22 @@ img:hover {
   cursor: default;
 }
 
-.button {
-  font-size: 3.6rem;
-  color: rgb(177, 175, 175);
-  background: none;
-  border: none;
+.active {
+  color: var(--light-purple);
 }
 
-.button:hover {
-  cursor: pointer;
-  color: black;
+.left-squished {
+  padding-right: 36%;
+}
+
+.right-squished {
+  padding-left: 36%;
+}
+
+.date {
+  letter-spacing: 2px;
+}
+
+.light {
+  color: var(--light-purple);
 }

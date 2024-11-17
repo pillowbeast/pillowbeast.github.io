@@ -5,8 +5,12 @@
     --shadow-color: #7f7b82;
     --primary-color: #f2a541;
     --secondary-color: #18a999;
+    --light-olive-green: #8ED6CB;
+    --dark-purple: #461561;
+    --light-purple: #8F45A5;
+    --dark-olive-green: #348071;
     --font-primary: 'Poppins', sans-serif;
-    --view-width: 90rem;
+    --view-width: 125rem;
 }
 
 /* Dark theme variables */

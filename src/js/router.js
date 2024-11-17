@@ -1,6 +1,7 @@
 import { handleGalleries } from './galleryslider.js';
 import { handleMoveButtons } from './moveButtons.js';
 import { handleOverlay } from './overlay.js';
+import { closeMenuUponNav, markActiveMenu } from './menu.js';
 
 export function setupRouting() {
     document.querySelectorAll('a').forEach(link => {
@@ -19,6 +20,7 @@ async function handleLinkClick(event) {
 
     await loadMainContent(url);
     window.history.pushState({}, '', url);
+    markActiveMenu();
 }
 
 async function loadMainContent(url = window.location.href) {
@@ -33,9 +35,10 @@ async function loadMainContent(url = window.location.href) {
         document.querySelector('main').innerHTML = newMainContent;
 
         applyDarkMode();
+        handleMoveButtons();
         handleGalleries();
         handleOverlay();
-        handleMoveButtons();
+        closeMenuUponNav();
     } catch (error) {
         console.error('Failed to load content:', error);
     }

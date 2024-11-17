@@ -1,4 +1,4 @@
-import { toggleMenu } from './menu.js';
+import { toggleMenu, closeMenuUponNav } from './menu.js';
 import { attachDarkModeToggle } from './darkMode.js';
 import { setupRouting } from './router.js';
 import { handleGalleries } from './galleryslider.js';
@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add('dark');
     }
     loadTemplates().then(() => {
+        closeMenuUponNav();
         attachToggles();
         handleMoveButtons();
         handleGalleries();

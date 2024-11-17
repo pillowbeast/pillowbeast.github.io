@@ -11,7 +11,7 @@ export function handleGalleries() {
         const positionIndicator = gallery.querySelector('.position-indicator');
         const circles = positionIndicator.querySelectorAll('.small-circle');
 
-        let currentIndex = 0;
+        let currentIndex = 1;
 
         function changeImageLook(index) {
             imageWrappers.forEach((element, idx) => {
