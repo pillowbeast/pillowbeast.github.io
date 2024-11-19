@@ -835,6 +835,7 @@ img.faded {
     
         display: flex;
         flex-direction: column;
+        align-items: start;
         gap: 1.2rem;
     }
 }
@@ -852,7 +853,6 @@ img.faded {
 
 .back-and-forth-button-container {
     height: 100%;
-    padding-bottom: 6.0rem;
 
     display: flex;
     flex-direction: row;
@@ -861,6 +861,8 @@ img.faded {
 
 .back-and-forth-button-container a {
     height: 100%;
+    transform: translateY(-6px);
+
     line-height: 1.0;
     font-size: 7.2rem;
     color: var(--light-olive-green);
@@ -868,6 +870,18 @@ img.faded {
 
 .back-and-forth-button-container a:hover {
     color: var(--dark-olive-green);
+}
+
+@media (max-width: 720px) {
+    .retro-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .back-and-forth-button-container a {
+        font-size: 3.9rem;
+    }
 }
 
 .retro-type {
