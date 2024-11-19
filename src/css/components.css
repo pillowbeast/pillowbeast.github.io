@@ -158,36 +158,6 @@ main {
     flex-direction: column;
 }
 
-/* =========== Page Title =========== */
-.page-title {
-    padding-top: 40px;
-    padding-bottom: 60px;
-}
-
-/* =========== Subtitle =========== */
-.subtitle {
-    padding-left: 2.4rem;
-    /* padding-top: 1.4rem; */
-    padding-bottom: 1.0rem;
-}
-
-/* =========== Subtitle =========== */
-.subsubtitle {
-    padding-left: 6.3rem;
-    /* padding-top: 1.4rem; */
-    padding-bottom: 1.0rem;
-}
-
-/* =========== Paragraph =========== */
-.paragraph {
-    padding-bottom: 2.0rem;
-}
-
-/* =========== Paragraph =========== */
-.subparagraph {
-    padding-left: 5.7rem;
-    padding-bottom: 1.0rem;
-}
 
 /* =========== Icon =========== */
 .icon {
@@ -229,6 +199,7 @@ main {
 
 .metadata-entry p {
     overflow: hidden;
+    padding: 0rem;
 }
 
 @media (max-width: 720px) {
@@ -667,14 +638,14 @@ img.faded {
 .project-tile {
     max-width: 100%;
     max-height: 720px;
-    padding: 24px;
-    margin: 24px;
+    padding: var(--enough-space);
+    margin: var(--enough-space);
 
-    box-shadow: 4px 4px 12px var(--shadow-color);
+    box-shadow: 4px 4px 12px var(--light-olive-green);
     
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--minimal-space);
 }
 
 .project-container1 {
@@ -689,7 +660,6 @@ img.faded {
 
 .project-container1 img {
     width: 100%;
-    padding: 24px;
     object-fit: cover;
 }
 
@@ -705,15 +675,24 @@ img.faded {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+}
+
+.project-date {
+    color: var(--light-purple);
+    line-height: 1.0;
+    padding: 0rem;
 }
 
 .project-summary {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
     text-overflow: ellipsis;
+
+    padding: 0rem;
 }
 
 /* =========== Project-Page =========== */
@@ -780,10 +759,12 @@ img.faded {
 .blog-date {
     color: var(--light-purple);
     line-height: 1.0;
+    padding-bottom: var(--standard-space);
 }
 
 .blog-title {
-    padding-bottom: 7px;
+    padding-left: 0rem;
+    padding-bottom: var(--minimal-space);
 }
 
 .blog-summary {
@@ -793,13 +774,16 @@ img.faded {
     -webkit-line-clamp: 3;
     line-clamp: 3;
     text-overflow: ellipsis;
+
+    padding-bottom: 0rem;
 }
 
 /* =========== Retros =========== */
 .retro-entry {
     width: auto;
     height: auto;
-    padding-top: 4.2rem;
+    padding-top: var(--standard-space);
+    padding-bottom: var(--standard-space);
     padding-left: 6.3rem;
 
     display: grid;
@@ -813,16 +797,24 @@ img.faded {
 .retro-date {
     grid-column: 1;
     grid-row: 1;
+
+    color: var(--light-purple);
+    line-height: 1.0;
+    padding: 0rem;
 }
 
 .retro-title {
     grid-column: 2;
     grid-row: 1;
+
+    padding: 0rem;
 }
 
 .retro-summary {
     grid-column: 2;
     grid-row: 2;
+
+    padding: 0rem;
 }
 
 
@@ -849,6 +841,10 @@ img.faded {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.retro-title-container h1 {
+    padding-bottom: 0rem;
 }
 
 .back-and-forth-button-container {
@@ -882,32 +878,6 @@ img.faded {
     .back-and-forth-button-container a {
         font-size: 3.9rem;
     }
-}
-
-.retro-type {
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.retro-type h2 {
-    padding-bottom: 4px;
-}
-
-.retro-type p {
-    padding-left: 12px;
-}
-
-.retro-type-content {
-    padding-left: 24px;
-}
-
-.retro-type-content h3 {
-    padding-top: 8px;
-    color: var(--shadow-color);
 }
 
 /* =========== About Page =========== */

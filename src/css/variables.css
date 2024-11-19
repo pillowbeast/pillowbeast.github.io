@@ -11,6 +11,13 @@
     --dark-olive-green: #348071;
     --font-primary: 'Poppins', sans-serif;
     --view-width: 125rem;
+
+    /* Spacing */
+    --extra-special-space: 12.2rem;
+    --special-space: 6.3rem;
+    --enough-space: 3.9rem;
+    --standard-space: 2.4rem;
+    --minimal-space: 1.2rem;
 }
 
 /* Dark theme variables */

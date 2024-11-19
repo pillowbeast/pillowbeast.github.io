@@ -30,17 +30,19 @@ h2::after {
 
 h3 {
   font-size: 3.9rem;
-  font-weight: 500;
+  font-weight: 400;
+  color: var(--light-olive-green);
 }
+
+/* h3::before {
+  content: "| ";
+  color: var(--light-purple);
+} */
 
 p, li, ol, i {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.2;
-}
-
-li {
-  padding-left: 36px;
 }
 
 b {
@@ -82,11 +84,7 @@ a {
     font-weight: 400;
     line-height: 1.2;
   }
-  
-  li {
-    padding-left: 36px;
-  }
-  
+
   b {
     font-size: 2.2rem;
     font-weight: 500;
@@ -100,6 +98,51 @@ a {
   }
 }
 
+h1 {
+  padding-top: var(--enough-space);
+  padding-bottom: var(--special-space);
+}
+
+h2 {
+  padding-left: var(--minimal-space);
+  padding-bottom: var(--minimal-space);
+}
+
+h3 {
+  padding-left: var(--enough-space);
+  padding-bottom: var(--minimal-space);
+  padding-top: var(--enough-space);
+
+}
+
+p {
+  padding-bottom: var(--enough-space);
+}
+
+ul {
+  padding-top: var(--minimal-space);
+  padding-left: var(--extra-special-space);
+  padding-bottom: var(--minimal-space);
+  /* list-style-position: inside; */
+}
+
+ul p {
+  font-size: 1.49rem;
+  padding: 0rem;
+}
+
+li {
+  padding-top: var(--minimal-space);
+  padding-bottom: var(--minimal-space);
+}
+
+.quote {
+  line-height: 1.1;
+  font-size: 3.3rem;
+  padding-left: var(--extra-special-space);
+  padding-right: var(--extra-special-space);
+  padding-bottom: 0rem;
+}
 
 /* =========== Misc =========== */
 button {
@@ -182,10 +225,6 @@ img:hover {
   margin-bottom: 12px;
 }
 
-.no-line-height {
-  line-height: 1.0;
-}
-
 .no-overlay {
   cursor: default;
 }
@@ -200,12 +239,4 @@ img:hover {
 
 .right-squished {
   padding-left: 36%;
-}
-
-.date {
-  letter-spacing: 2px;
-}
-
-.light {
-  color: var(--light-purple);
 }
