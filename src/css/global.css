@@ -220,11 +220,6 @@ img:hover {
   height: 40vh;
 }
 
-.flowing-text p {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
 .no-overlay {
   cursor: default;
 }

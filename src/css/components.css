@@ -220,8 +220,8 @@ main {
 .gallery {
     position: relative;
     width: 100%;
-    padding-top: 7.2rem;
-    padding-bottom: 7.2rem;
+    padding-top: var(--special-space);
+    padding-bottom: var(--special-space);
 }
 
 .sliderimages {
@@ -692,6 +692,7 @@ img.faded {
     line-clamp: 3;
     text-overflow: ellipsis;
 
+    margin: var(--minimal-space);
     padding: 0rem;
 }
 
@@ -707,7 +708,7 @@ img.faded {
 
 .project-page-summary {
     width: 100%;
-    padding-left: 24px;
+    padding: var(--standard-space);
 
     font-style: italic;
 }
@@ -1025,6 +1026,8 @@ img.faded {
 /* =========== Inline-Image =========== */
 .inline-img {
     width: 100%;
+    padding-top: var(--standard-space);
+    padding-bottom: var(--standard-space);
 }
 
 .inline-img img {
@@ -1036,6 +1039,15 @@ img.faded {
     cursor: pointer;
 }
 
+.inline-img p {
+    font-size: var(--standard-space);
+    color: var(--light-purple);
+    text-align: right;
+    font-style: italic;
+    padding-top: var(--minimal-space);
+    padding-bottom: var(--standard-space);
+}
+
 .inline-img img:hover {
     scale: 1.0;
 }
@@ -1045,12 +1057,13 @@ img.faded {
     /* height: 10vh; */
     margin-left: -20px;
     margin-right: -20px;
+    margin-top: var(--standard-space);
+    margin-bottom: var(--enough-space);
 
     display: flex;
     justify-content: center;
     overflow: hidden;
     box-sizing: border-box;
-
 }
 
 .banner-img.center-img img {
