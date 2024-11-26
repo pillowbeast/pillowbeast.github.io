@@ -88,6 +88,7 @@ a {
   b {
     font-size: 2.2rem;
     font-weight: 500;
+    line-height: 1.2;
   }
   
   a {
@@ -111,7 +112,7 @@ h2 {
 h3 {
   padding-left: var(--enough-space);
   padding-bottom: var(--minimal-space);
-  padding-top: var(--enough-space);
+  padding-top: var(--standard-space);
 
 }
 
@@ -127,6 +128,22 @@ ul {
 }
 
 ul p {
+  font-size: 1.49rem;
+  padding: 0rem;
+}
+
+ol {
+  padding-top: var(--minimal-space);
+  padding-left: var(--extra-special-space);
+  padding-bottom: var(--minimal-space);
+  /* list-style-position: inside; */
+}
+
+ol li::marker {
+  color: var(--light-purple);
+}
+
+ol p {
   font-size: 1.49rem;
   padding: 0rem;
 }
@@ -234,4 +251,11 @@ img:hover {
 
 .right-squished {
   padding-left: 36%;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
