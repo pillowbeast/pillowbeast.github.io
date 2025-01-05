@@ -1,26 +1,27 @@
-name: Deploy Hugo Site to GitHub Pages
+name: Publish Site to GitHub Pages
 
 on:
   push:
     branches:
-      - main # Trigger on changes to the main branch
-  workflow_dispatch: # Allow manual triggers
+      - main # Trigger on changes to exampleSite
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout exampleSite branch
       uses: actions/checkout@v3
       with:
-        submodules: true # Initialize submodules
-        fetch-depth: 0
+        ref: exampleSite
+        submodules: true # Ensure submodules are initialized
+        fetch-depth: 0 # Fetch all history for submodules
 
     - name: Set up Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: 'latest'
+        hugo-version: 'latest' # Specify a specific version if needed
 
     - name: Build Hugo Site
       run: hugo --minify
