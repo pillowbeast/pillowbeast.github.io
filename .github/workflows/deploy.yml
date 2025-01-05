@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout exampleSite branch
+    - name: Checkout main branch
       uses: actions/checkout@v3
       with:
-        ref: exampleSite
+        ref: main
         submodules: true # Ensure submodules are initialized
         fetch-depth: 0 # Fetch all history for submodules
 
