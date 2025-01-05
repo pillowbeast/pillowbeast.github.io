@@ -1,0 +1,41 @@
+title = "Pillow"
+languageCode = "en-us"
+theme = "hugo-pillow"
+baseURL = "https://pillowbeast.github.io/"
+
+[params]
+    [params.costumisation]
+        primaryColor = "#8ED6CB"
+        secondaryColor = "#8F45A5"
+        footerText = "Crafted with ❤︎ in Zurich."
+    [params.contact]
+        name = "Pillowbeast"
+        email = "pillowbeast@email.com"
+        phone = "+00 000 00 00"
+        adress = "Zurich, Switzerland"
+    # Add your social media links here, these will be added to the footer.
+    [params.profiles]
+        spotify = "https://https://open.spotify.com/user/pillowbeast"
+        github = "https://github.com/pillowbeast"
+        # linkedin = "https://linkedin.com"
+        # email = "mailto:pillowbeast@email.com"
+        # instagram = "https://instagram.com"
+
+# TODO: implement settings
+# [settings]
+#     ShowShareButtons = true
+#     ShowReadingTime = true
+#     displayFullLangName = true
+#     ShowPostNavLinks = true
+#     ShowBreadCrumbs = true
+#     ShowCodeCopyButtons = true
+#     ShowRssButtonInSectionTermList = true
+#     ShowAllPagesInArchive = true
+#     ShowPageNums = true
+#     ShowToc = true
+
+ignoreLogs = ["warning-goldmark-raw-html"]
+
+[markup]
+    [markup.highlight]
+        style = "rose-pine-dawn"
