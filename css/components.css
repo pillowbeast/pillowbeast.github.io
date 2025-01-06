@@ -18,9 +18,7 @@ header {
     align-items: center;
 }
 
-.header-container p,
-b,
-a {
+.header-container p, .header-container b, .header-container a {
     font-family: var(--font-primary);
 }
 
