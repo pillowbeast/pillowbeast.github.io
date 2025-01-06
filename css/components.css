@@ -736,6 +736,11 @@ img.faded {
     color: var(--secondary-color);
 }
 
+.ingredient-name {
+    max-width: 80%;
+}
+
+
 .recipe-ingredients-img {
     width: 35%;
     overflow: hidden;

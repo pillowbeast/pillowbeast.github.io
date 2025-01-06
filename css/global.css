@@ -6,7 +6,7 @@ body {
 }
 
 /* =========== Fonts =========== */
-h1, h2, h3{
+h1, h2, h3, h4{
   font-family: var(--font-primary);
   line-height: 0.85;
 }
@@ -40,6 +40,12 @@ h2::after {
 
 h3 {
   font-size: 3.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-size: 2.4rem;
   font-weight: 500;
   color: var(--primary-color);
 }
@@ -129,7 +135,11 @@ h3 {
   /* padding-left: var(--enough-space); */
   padding-bottom: var(--standard-space);
   /* padding-top: var(--standard-space); */
+}
 
+h4 {
+  padding-bottom: var(--minimal-space);
+  /* padding-top: var(--minimal-space); */
 }
 
 p {
