@@ -24,7 +24,7 @@ ingredients:
         - { amount: "250g", name: "risotto rice" }
         - { amount: "250g", name: "champignon" }
         - { amount: "1", name: "onion, chopped" }
-        - { amount: "(1 clove)", name: "garlic, minced (optional)" }
+        - { amount: "1 clove", name: "garlic, minced (optional)" }
         - { amount: "pinch", name: "salt" }
         - { amount: "2 tbsp.", name: "olive oil" }
         - { amount: "100ml", name: "white wine" }

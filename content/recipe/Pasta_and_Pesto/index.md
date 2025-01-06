@@ -14,11 +14,13 @@ cookDetails:
   mealType: "Main Course"
   difficulty: "Easy"
 ingredients:
-  - { amount: "0.5 kg", name: "pasta" }
-  - { amount: "100 g", name: "pesto" }
-  - { amount: "100 g", name: "extra virgin olive oil" }
-  - { amount: "1 l", name: "water" }
-  - { amount: "1 tbsp.", name: "salt" }
+  pasta:
+    - { amount: "0.5 kg", name: "pasta" }
+    - { amount: "1 l", name: "water" }
+  sauce:
+    - { amount: "100 g", name: "pesto" }
+    - { amount: "100 g", name: "extra virgin olive oil" }
+    - { amount: "1 tbsp.", name: "salt" }
 steps:
   - "Cook Pasta"
   - "Add Pesto"

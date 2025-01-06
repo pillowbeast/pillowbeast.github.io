@@ -14,17 +14,19 @@ cookDetails:
   mealType: "Main Course"
   difficulty: "Medium"
 ingredients:
+  pasta:
   - { amount: "0.5kg", name: "spaghetti" }
+  bolognese_sauce:
   - { amount: "300g", name: "ground beef" }
   - { amount: "1", name: "onion, chopped" }
   - { amount: "2 cloves", name: "garlic, minced" }
+  - { amount: "2 tbsp.", name: "olive oil" }
   - { amount: "400g", name: "canned tomatoes" }
   - { amount: "2 tbsp.", name: "tomato paste" }
   - { amount: "100ml", name: "red wine (optional)" }
-  - { amount: "2 tbsp.", name: "olive oil" }
+  - { amount: "1 tsp.", name: "italian herbs" }
   - { amount: "1 tsp.", name: "salt" }
   - { amount: "1/2 tsp.", name: "pepper" }
-  - { amount: "1 tsp.", name: "Italian herbs" }
 steps:
   - "Cook spaghetti according to package instructions. Drain and set aside."
   - "Heat olive oil in a pan over medium heat. Sauté chopped onion and minced garlic until fragrant."

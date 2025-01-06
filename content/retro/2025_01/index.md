@@ -1,9 +1,9 @@
 ---
 title: "January Goals"
-date: 2024-12-01T17:33:06+01:00
+date: 2025-01-01T17:33:06+01:00
 metadata:
 #   readingTime: 15
-summary: ""
+summary: "Januaaaaary. New Year New Meeee."
 draft: true
 ---
 
