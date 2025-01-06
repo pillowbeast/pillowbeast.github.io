@@ -677,13 +677,6 @@ img.faded {
     gap: var(--standard-space);
 }
 
-@media (max-width: 920px) {
-    .ingredients_and_steps {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .recipe-data-line {
     width: auto;
     padding-left: var(--enough-space);
@@ -715,6 +708,21 @@ img.faded {
 
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    .ingredients_and_steps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ingredients {
+        width: 100%;
+    }
+
+    .recipe-steps {
+        width: 100%;
+    }
 }
 
 .ingredient {
