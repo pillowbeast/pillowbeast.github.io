@@ -39,3 +39,6 @@ ignoreLogs = ["warning-goldmark-raw-html"]
 [markup]
     [markup.highlight]
         style = "rose-pine-dawn"
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
