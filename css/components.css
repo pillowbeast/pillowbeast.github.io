@@ -94,6 +94,38 @@ header nav a:hover {
     }
 }
 
+/* =========== Section Tags =========== */
+.post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+/* Style for section labels */
+.type a {
+    padding: 0.3rem 1.2rem;
+    font-size: var(--standard-space);
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.post a:hover {
+    color: var(--text-color);
+}
+
+.type a:hover {
+    color: white;
+}
+
+.post:hover {
+    background-color: var(--secondary-color);
+}
+
 /* =========== MoveUpButton =========== */
 #move-up-button {
     position: fixed;
@@ -178,7 +210,7 @@ main {
 /* =========== Metadata Entry =========== */
 .metadata-line {
     width: auto;
-    padding-top: var(--standard-space);
+    padding-top: var(--minimal-space);
     margin-bottom: calc(calc(var(--special-space) * -1) + var(--minimal-space));
 
     display: flex;
@@ -203,6 +235,44 @@ main {
     padding-top: 2px;
 }
 
+.tags-and-categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.tags, .categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.6rem;
+    padding-top: var(--minimal-space);
+}
+
+.tags::between {
+    content: "Tags: ";
+}
+
+.category, .tag {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.categories p, .tags p {
+    padding: 0rem;
+}
+
+.tag a, .category a {
+    padding: 0.2rem 0.5rem;
+    color: var(--primary-color);
+}
+
+.tag:hover, .category:hover {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
 @media (max-width: 900px) {
     .metadata-line {
         width: auto;
@@ -219,7 +289,6 @@ main {
         width: auto;
 
         display: flex;
-        flex-direction: row-reverse;
         align-items: flex-start;
         justify-content: center;
         gap: 1.2rem;

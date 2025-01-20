@@ -309,6 +309,7 @@ img:hover {
   font-size: var(--standard-space);
 }
 
+/* =========== Code =========== */
 .highlight div {
   border-radius: 0.5rem;
 }
@@ -320,6 +321,12 @@ pre {
 
 code {
   font-family: "Courier New", Courier, monospace;
+}
+
+.chroma {
+  padding: 2.4rem; /* Adjust padding as needed */
+  border-radius: 5px; /* Optional: Rounded corners */
+  overflow-x: auto; /* Prevent horizontal overflow for long lines */
 }
 
 details {
