@@ -25,20 +25,17 @@ baseURL = "https://pillowbeast.github.io/"
 # [settings]
 #     ShowShareButtons = true
 #     ShowReadingTime = true
-#     displayFullLangName = true
 #     ShowPostNavLinks = true
 #     ShowBreadCrumbs = true
 #     ShowCodeCopyButtons = true
-#     ShowRssButtonInSectionTermList = true
-#     ShowAllPagesInArchive = true
-#     ShowPageNums = true
-#     ShowToc = true
 
 ignoreLogs = ["warning-goldmark-raw-html"]
 
 [markup]
     [markup.highlight]
-        style = "rose-pine-dawn"
+        # style = "rose-pine-dawn"
+        noClasses=false
+
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true

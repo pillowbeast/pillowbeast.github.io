@@ -9,6 +9,11 @@ draft: true
 
 {{< metadata  >}}
 
+
+{{< spotify spotify_link="https://open.spotify.com/embed/track/5BfRL84y1LtmACz4UreC0S?utm_source=generator" spotify_theme="light" spotify_width="100%" spotify_type="tall" spotify_border_radius="8px" >}}
+
+***
+
 <!-- ## Highlights
 What stood out the most this month:
 - Tried new things.
@@ -26,12 +31,13 @@ What stood out the most this month:
 ### Find A Job
 - **Specification**: Hammering out applications to spots where I would like to work in the future.
 
-<!-- 
 ***
 
 ## Some Stories
-### A New Appreciation for Cleanliness
-I’ve discovered a newfound love for orderliness and cleanliness. Coming home to a tidy space or finishing mundane tasks makes me feel incredibly refreshed and accomplished.
+### Getting Trolled by Github Copilot
+When implementing Spotify embedding in the form of an *iFrame* I used the song **Juicy Money** from *Shirin David* as a default value. I was expecting to also get suggested this song when I wanted to try deploying it the first time. However Github Copilot suggested me the song: **Never Gonna Give You Up** from *Rick Astley*.
+
+{{< spotify spotify_link="https://open.spotify.com/embed/track/4PTG3Z6ehGkBFwjybzWkR8?utm_source=generator" spotify_theme="dark" spotify_width="100%" spotify_type="tall" spotify_border_radius="8px" >}}
 
 ***
 
@@ -49,4 +55,4 @@ I’ve discovered a newfound love for orderliness and cleanliness. Coming home t
 ### Goals for Next Month
 {{< bullet content="Find thoughtful gifts for family members." extra-info="The holiday season always brings the challenge of gift hunting. Time to tackle that list!" >}}
 - Go ice-skating.
-- Enjoy romantic winter activities. -->
+- Enjoy romantic winter activities.
