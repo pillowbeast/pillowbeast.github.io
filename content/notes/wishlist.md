@@ -2,7 +2,7 @@
 title: "Wishlist"
 date: 2025-01-20T16:29:32+01:00
 summary: "A Note about any topic."
-draft: true
+draft: false
 categories: []
 tags: []
 ---
