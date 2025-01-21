@@ -320,6 +320,7 @@ pre {
 }
 
 code {
+  position: relative;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -338,6 +339,17 @@ details {
 
 summary::marker {
   color: var(--secondary-color);
+}
+
+.code-copy-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 0 0 0 5px;
+  cursor: pointer;
 }
 
 /* =========== Attributes =========== */

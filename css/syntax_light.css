@@ -1,14 +1,14 @@
 /* Generated using: hugo gen chromastyles --style=rose-pine-dawn */
 
-/* Background */ .bg { color:#575279;background-color:#faf4ed; }
-/* PreWrapper */ .chroma { color:#575279;background-color:#faf4ed; }
+/* Background */ .bg { color:#575279;background-color:#ebdac6; }
+/* PreWrapper */ .chroma { color:#575279;background-color:#ebdac6; }
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color:#b4637a }
 /* CodeLine */ .chroma .cl {  }
 /* LineLink */ .chroma .lnlinks { outline:none;text-decoration:none;color:inherit }
 /* LineTableTD */ .chroma .lntd { vertical-align:top;padding:0;margin:0;border:0; }
 /* LineTable */ .chroma .lntable { border-spacing:0;padding:0;margin:0;border:0; }
-/* LineHighlight */ .chroma .hl { background-color:#e1dbd5 }
+/* LineHighlight */ .chroma .hl { background-color:#cabfb3 }
 /* LineNumbersTable */ .chroma .lnt { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f }
 /* LineNumbers */ .chroma .ln { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f }
 /* Line */ .chroma .line { display:flex; }
