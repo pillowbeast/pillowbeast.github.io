@@ -12,7 +12,7 @@ tags: []
 ## Hugo Site
 
 ### Utility
-- Code Copy Button
+- None
 
 ### Theme
 - Create Mockups
