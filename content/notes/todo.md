@@ -1,7 +1,7 @@
 ---
-title: "Todo"
+title: "ToDo"
 date: 2025-01-20T16:30:09+01:00
-summary: "A Note about any topic."
+summary: "Next Steps & ToDos on personal projects."
 draft: false
 categories: []
 tags: []
@@ -32,7 +32,8 @@ The Tech Stack is based on **Hugo Frontend** (fixed), then a **Backend** (Flask/
 - Add Spotify Component
 - Add Code Block
 
-### Language Learning App
-- smth
-- smth
-- smth
+## Language Learning App
+- Pick platform
+- Pick framework/library
+- Pick DB Type
+- Design DB needed for idea
