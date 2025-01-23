@@ -11,7 +11,7 @@ This website acts as a personal dump for all kinds of information and emotions�
 This website acts as a personal dump for all kinds of information and emotions—thoughts, ideas, and experiments that bubble up and force their way out. It’s a space for creativity and exploration, where content grows organically.
 
 ### Impressions
-{{< gallery src="gallery/" >}}
+{{< gallery src="_gallery/" >}}
 
 ***
 
