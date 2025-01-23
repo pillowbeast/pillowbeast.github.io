@@ -83,6 +83,12 @@ For the sake of doing this thing with an overview and not having to correct myse
 ### Introduction of API
 Would it be possible to immediately import verbs and their tenses from an API, such as Leo or PONS or whatever? There seem to be two interesting ways of doing it [reverso-api](https://www.npmjs.com/package/reverso-api) and an official [Entreprise Team plan](https://documents.reverso.net/Pricing.aspx?lang=en) which allows access to the API. I guess here I should get in contact with them. Whilst this is very very interesting, I should only look to do this once I have a standing App.
 
+### Choice of Prebuilt Designs
+As this project is not about learning how to write beautiful React Native components and generating a beautiful app, but more about implementing a backend, first interactions with the APIs/Native Components I am looking to use a library/package with prebuilt components so that I do not have to worry about styling too much. I have stumbled over [React Native Material](https://rn-material.js.org/docs/components/fab) and [React Native Paper](https://reactnativepaper.com/) which are Material implementations for React Native. I will go with the larger **React Native Paper** as this way I already have more documentation, as well as more components to choose from. This way I will make my first draft of the app and if I still enjoy it, in the future I may look to implement my own style/restyle the components.
+
+### Learnings/Struggles
+1. I am spending too much time trying to learn frontend development for React Native. Maybe I should just focus on the logic first and use the components that are readily available, such as React Native Paper, instead of tinkering around with Restyle to get exactly what I want. If we want to change the UI afterwards it is probably best to do so after the logic is there. This way I already know which components I require and I will not be styling and restyling several times.
+
 ### Steps + Requirements
 - Settled on React Native + Expo
 - I additionally require a BACKEND for keeping track of the words that the user has saved.
