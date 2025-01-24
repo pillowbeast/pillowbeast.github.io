@@ -70,7 +70,7 @@ First we create an Expo App with some boilerplate, but as we want to start from 
 ### Styling
 A big difference I just stumbled across is styling in React Native uses Javascript objects and not CSS, but most properties are similar, except that they use camel casing (i.e. backgroundColor instead of background-color). I think that I will try my luck with Tailwindcss via ```npm install tailwind-react-native-classnames``` so that I can get started a bit quicker and dont need to worry about the design too much and therefore focus on the logic and backend utility.
 
-For icons we use the ```@expo/vector-icons``` package where one can use the free icons from a lot of packs such as MaterialIcon, Fontawesome, etc. (see [link](https://icons.expo.fyi/Index)).
+For icons we use the ```@expo/vector-icons``` package where one can use the free icons from a lot of packs such as MaterialIcon, Fontawesome, etc. (see [link](https://icons.expo.fyi/Index) and [link](https://oblador.github.io/react-native-vector-icons/)).
 
 I have followed the tutorial until the [additional resources](https://docs.expo.dev/tutorial/follow-up/) site. I have learned about media pickers, gestures, animations, screenshots and navigation bars.
 
@@ -88,11 +88,26 @@ As this project is not about learning how to write beautiful React Native compon
 
 ### Learnings/Struggles
 1. I am spending too much time trying to learn frontend development for React Native. Maybe I should just focus on the logic first and use the components that are readily available, such as React Native Paper, instead of tinkering around with Restyle to get exactly what I want. If we want to change the UI afterwards it is probably best to do so after the logic is there. This way I already know which components I require and I will not be styling and restyling several times.
+2. Doing a competition analysis, determining specific missing features, determining USPs.
+
+### Analyse your Competition
+Now whilst I still think that this project is worthwhile, because it is simple enough to teach me a variety of skills, I have to add a caveat. When I realized that there is a shortcoming of writing words into a notebook and then never wanting to repeat them I should have looked outside further than [Quizlet](https://quizlet.com/latest) which everyone uses and analysed the competition. With a simple Google search I stumbled over the following two products [Anki](https://apps.ankiweb.net/) and [Flashcard World](https://flashcards.world/), which do not completely do the same thing as I am trying to achieve, but are very similar! The nice thing about doing something yourself is that you can customize it according to your needs, but since at least Anki is open-source I could have also learned to customize their code for my needs (-> forking and packaging/building myself) instead of starting from scratch.
+
+### Database + SQLite
+It seems like I can find SQLite any and everywhere. I guess for larger production grade things it is not the standard anymore, but I seem to stumble over it everywhere, most likely because of its ease of usage. My architecture/structure is the following I have languages and each of that language has words, for the words I am envisioning differences between types of words (verb, noun, etc.) and proficiency/timestamp for repetition. Turns out SQLite does nto work with Web (I knew this but forgot it again) so I will need to implement an IndexedDB, otherwise I cannot test my app also on Web[^1].
+I guess I am working with **local-first** after looking around it seems that SQLite with Cloud Sync is a good idea for Local-first and offline usage, eventually I may want to sync this with a PostgresSQL or Supabase database (Firebase or Supabase).
+
+It looks like there is three ways of saving data: [Expo SecureStore](https://docs.expo.dev/versions/latest/sdk/securestore/), [Expo SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/) and [AsynchronousStorage](https://react-native-async-storage.github.io/async-storage/docs/usage/). Where the first is for encrypted storing, sqlite for larger data amounts and asynchronous storage for smaller amounts such as user preferences.
+
+### Expo navigation
+Expo offers pretty cool **useRouter** features, where I can setup dynamic pathing using **[iso].tsx** this will act as a template for all traffic arriving here.
 
 ### Steps + Requirements
 - Settled on React Native + Expo
 - I additionally require a BACKEND for keeping track of the words that the user has saved.
+- Sync database with Firebase or Supabase so that user can access data across devices.
 
 - Future Future
   - Reverso API or similar
 
+[^1]: I wouldnt need to do this if I had my Android phone with me, but as I am trying to be healed and remove all the dopamine toxicity from my system I left it at home.
