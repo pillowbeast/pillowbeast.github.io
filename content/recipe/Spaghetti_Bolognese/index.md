@@ -51,8 +51,6 @@ Overall **I am in love** with this recipe.
 ---
 
 ## Why You'll Love It
-- **Comfort Food**: A hearty dish perfect for any occasion.
-- **Rich Flavors**: Layers of taste from herbs, garlic, and a hint of wine.
-- **Customizable**: Easy to adapt for personal preferences.
+- **Passione**: This recipe shows your guest how much love you spent into the dish, a 1hour sauce is great, but did you try leaving it on for 5 hours. Suddenly, your sauce fucks with your guests' brain.
 
 {{< recipe >}}
