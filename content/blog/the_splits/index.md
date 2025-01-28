@@ -25,6 +25,11 @@ I have already made some considerable progress when just strechting myself. Howe
 Reading up on other blogs and journeys towards the splits I stumbled across [Elaine's Journey](https://www.journeytomobility.com/front-splits-journey/) towards the splits. Whilst I do start at a bit of a more flexible point, I think there are several poitns that I can benefit from! Firstly, **warmign up** makes all the difference and **measurements** should be taken at the **end of session**. There is no reason to push yourself, as your body has to get comfortable in the new range of motion, which means **flexibility requires consistency**.
 
 ## Status Quo
+
 ### January 2025
 This is where I am right now:
 
+{{< inline-img src="images/2025_01_left.png" caption="January 2025 - Left Front Split" alignment="right" max-width="100%" >}}{{</ inline-img >}}
+{{< inline-img src="images/2025_01_right.png" caption="January 2025 - Right Front Split" alignment="right" max-width="100%" >}}{{</ inline-img >}}
+
+smth

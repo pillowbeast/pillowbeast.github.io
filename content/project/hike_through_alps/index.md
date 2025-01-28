@@ -28,6 +28,7 @@ Einige Ideen sind:
 - **Alpenpässe-Weg**; Route 6:
 - **Walserweg**; Route 35:
 - **ViaBerna**; Route 38:
+- **Sentiero della Pace**; Friedenswanderweg am Gardasee
 
 Laut dem ViaAlpina kann man für 120 ETappen unterwegs sein, von Triest über die Zugspitze/Vaduz und Grindelwald nach Monaco. Dabei macht man Tagesetappen von ungefähr 20km und 1000 Höhenmetern, also ungefähr 6-6.5 Stunden tägliche Laufzeit. 
 

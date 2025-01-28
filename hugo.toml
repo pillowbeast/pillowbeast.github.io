@@ -30,6 +30,7 @@ baseURL = "https://pillowbeast.github.io/"
 #     ShowCodeCopyButtons = true
 
 ignoreLogs = ["warning-goldmark-raw-html"]
+enableGitInfo = true
 
 [markup]
     [markup.highlight]
