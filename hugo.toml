@@ -9,17 +9,17 @@ baseURL = "https://pillowbeast.github.io/"
         secondaryColor = "#8F45A5"
         footerText = "Crafted with ❤︎ in Zurich."
     [params.contact]
-        name = "Pillowbeast"
-        email = "pillowbeast@email.com"
-        phone = "+00 000 00 00"
+        name = "Yannik Werner"
+        email = "yannik.werner@yahoo.de"
+        # phone = "+00 000 00 00"
         adress = "Zurich, Switzerland"
     # Add your social media links here, these will be added to the footer.
     [params.profiles]
         spotify = "https://https://open.spotify.com/user/pillowbeast"
         github = "https://github.com/pillowbeast"
-        # linkedin = "https://linkedin.com"
-        # email = "mailto:pillowbeast@email.com"
-        # instagram = "https://instagram.com"
+        linkedin = "https://www.linkedin.com/in/yannik-werner"
+        email = "mailto:yannik.werner@yahoo.de"
+        instagram = "https://www.instagram.com/wernihetmegerni/"
 
 # TODO: implement settings
 # [settings]
