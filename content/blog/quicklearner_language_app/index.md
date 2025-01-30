@@ -102,6 +102,8 @@ It looks like there is three ways of saving data: [Expo SecureStore](https://doc
 ### Expo navigation
 Expo offers pretty cool **useRouter** features, where I can setup dynamic pathing using **[iso].tsx** this will act as a template for all traffic arriving here.
 
+I will further start schachteln the navigation, as each language has several lists and words.
+
 ### Steps + Requirements
 - Settled on React Native + Expo
 - I additionally require a BACKEND for keeping track of the words that the user has saved.

@@ -9,6 +9,6 @@ description: "Here I list my most important moments and projects :)"
 cv_document: "CV_YW_2025_01.pdf"
 image: "images/me.png"
 notable_events:
+  # - url: "project/hike_throug"
   - url: "project/half-marathon-lucerne"
-  - url: "project/build-rocket"
 ---

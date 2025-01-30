@@ -5,7 +5,7 @@ metadata:
     readingTime: 7
 image: "images/rocket_cover.png"
 summary: "A journey into the world of rocketry, from initial designs to the thrill of launch."
-draft: false
+draft: true
 ---
 
 {{< metadata >}}

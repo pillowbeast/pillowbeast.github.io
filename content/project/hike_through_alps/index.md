@@ -3,9 +3,9 @@ title: "Hike through the Alps"
 date: 2025-01-06
 metadata:
     # readingTime: 7
-# image: "images/rocket_cover.png"
+image: "images/Sentiero-della-Pace.jpg"
 summary: "Eastern to Western Alps, a knuckle-biting adventure."
-draft: true
+draft: false
 ---
 
 {{< metadata >}}

@@ -31,7 +31,7 @@ steps:
   - "Mix crumble ingredients and knead."
   - "Add apples to casserole and distribute crumble evenly."
   - "Bake for ~45 min on middle rack."
-image: "images/default-recipe.jpg"
+image: "images/apple_crumble.jpg"
 draft: false
 categories: []
 tags: [Desert]

@@ -5,7 +5,7 @@ metadata:
   readingTime: 10
 image: "images/gardening_cover.webp"
 summary: "Gardening is my therapy, my workout, and my creative outlet all rolled into one. Whether it's planting new flowers or growing my own herbs, it brings a sense of purpose and peace to my days."
-draft: false
+draft: true
 ---
 
 {{< metadata >}}

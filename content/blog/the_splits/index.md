@@ -4,9 +4,9 @@ date: 2025-01-23T10:14:26+01:00
 metadata:
   # readingTime: 10
   
-image: "images/default-blog.webp"
+image: "images/2025_01_right.png"
 summary: "Write a short summary of your blog post here."
-draft: true
+draft: false
 categories: []
 tags: []
 ---
@@ -31,5 +31,3 @@ This is where I am right now:
 
 {{< inline-img src="images/2025_01_left.png" caption="January 2025 - Left Front Split" alignment="right" max-width="100%" >}}{{</ inline-img >}}
 {{< inline-img src="images/2025_01_right.png" caption="January 2025 - Right Front Split" alignment="right" max-width="100%" >}}{{</ inline-img >}}
-
-smth

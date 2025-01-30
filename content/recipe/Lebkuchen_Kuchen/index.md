@@ -29,7 +29,7 @@ steps:
   - "Add milk slowly, mixing well, then add oil."
   - "Spread dough evenly on baking tray."
   - "Bake for ~30 min on the middle rack."
-image: "images/default-recipe.jpg"
+image: "images/lebkuchen_kuchen.jpg"
 draft: false
 categories: []
 tags: [Desert, Pastry]
