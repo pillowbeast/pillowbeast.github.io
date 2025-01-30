@@ -6,7 +6,7 @@ metadata:
 description: |
   Personal blog, diary, dumping grounds... \
   Based on self-made Hugo template **Pillow**.([link](https://github.com/pillowbeast/hugo-pillow)) \
-  Created in January 2025. 
+  Created in December 2024. 
 draft: false
 ---
 
