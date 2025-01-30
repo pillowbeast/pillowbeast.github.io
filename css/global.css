@@ -138,8 +138,8 @@ a b {
 }
 
 h1 {
-  padding-top: var(--special-space);
-  padding-bottom: var(--enough-space);
+  padding-top: calc(var(--special-space) * 1.5);
+  padding-bottom: calc(var(--enough-space) * 1.5);
 }
 
 h2 {

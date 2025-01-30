@@ -96,6 +96,8 @@ header nav a:hover {
 
 /* =========== Section Tags =========== */
 .post {
+    padding-left: var(--standard-space);
+    padding-bottom: var(--minimal-space);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
