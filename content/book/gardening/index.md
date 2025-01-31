@@ -7,7 +7,7 @@ metadata:
   rating: 9/10
 summary: "A comprehensive guide to the joys of gardening, blending practical tips, creative ideas, and the therapeutic benefits of cultivating your own green space. Perfect for beginners and seasoned gardeners alike."
 image: "images/gardening_cover.webp"
-draft: false
+draft: true
 ---
 
 {{< metadata >}}
