@@ -15,10 +15,11 @@ draft: false
 ***
 
 ## Highlights
-This month was quite filled, from an LSD trip over finishing my Website to starting a new side project and having a presentation at SBB, quite a lot happened!
+This month was quite filled, from planning my next steps, over finishing my Website to starting a new side project and having a presentation at SBB, quite a lot happened!
 - Finished the design of my website.
+- Presentation with SBB.
 - Going skydiving with my dad.
-- LSD trip.
+<!-- - LSD trip. -->
 - And much more...
 
 ***

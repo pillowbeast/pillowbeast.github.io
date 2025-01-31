@@ -20,7 +20,7 @@ Bekanntlicherweise dreht sich die Welt ja weiter, und so habe auch ich Jahre daz
 
 Als ich dann im Herbst 2024 einen rechten Aufräumschub bekam und plötzlich mein ganzes Hab-und-Gut auf Ricardo/Tutti wiedergefunden habe, waren für mich die Würfel gefallen. Ich wollte auch mein Militärzeugs loswerden und meinen Alltag/Kalender säubern. Keine obligatorischen Wiederholungskurse mehr, keine nervigen Oblischiessen, kein extra administrativer Aufwand, das alles sollte weg. Es wurde Zeit das Militär hinter mir zu lassen.[^1]
 
-Das mir in meinem letzten Wiederholungskurz auch ein kleines Malheur passiert ist und ich daher nicht weiss ob ich noch im Biolabor-Zug oder nun der Probenannahmestelle (PAS) eingeteilt sein werde, hat mich nur noch mehr bekräftigt in meiner Entscheidung. 
+<!-- Das mir in meinem letzten Wiederholungskurz auch ein kleines Malheur passiert ist und ich daher nicht weiss ob ich noch im Biolabor-Zug oder nun der Probenannahmestelle (PAS) eingeteilt sein werde, hat mich nur noch mehr bekräftigt in meiner Entscheidung.  -->
 
 ---
 
