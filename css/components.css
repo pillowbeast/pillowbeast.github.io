@@ -1323,7 +1323,7 @@ img.faded {
     /* Floats the image to the left */
     padding-right: var(--enough-space);
     /* Adds spacing between image and text */
-    max-width: 45%;
+    /* max-width: 45%; */
 }
 
 .inline-img.right .img-container {
@@ -1331,7 +1331,7 @@ img.faded {
     /* Floats the image to the right */
     padding-left: var(--enough-space);
     /* Adds spacing between image and text */
-    max-width: 40%;
+    /* max-width: 40%; */
 }
 
 .img-container img {
