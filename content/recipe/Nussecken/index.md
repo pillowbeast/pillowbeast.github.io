@@ -34,9 +34,9 @@ ingredients:
   garnish:
   - { amount: "200g", name: "dark chocolate" }
 steps:
-  - "..."
-  - "..."
-  - "..."
+  - "Teig zusammenkneten und auf gefettetes Backbleck verteilen."
+  - "Aprikosenmarmelade auf Teig verteilen."
+  - "Belag."
 image: "images/nussecken.png"
 draft: false
 categories: []
@@ -46,7 +46,6 @@ tags: [Desert, Pastry]
 {{< metadata >}}
 
 ## The Origin
-
 
 {{< inline-img src="images/nussecken_caramel_layer.png" caption="delicate caramel layer" alignment="right" max-width="40%" >}} 
 The Nussecken are generally prepared and eaten from the Schwabenländle up until Hessen. A heavy, sweet, nutty desert that leaves all wishes fulfilled. You're craving chocolate, done! You're craving a crispy honey glaze, done! Nuts, done!

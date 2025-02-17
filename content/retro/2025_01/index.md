@@ -21,7 +21,6 @@ This month was quite filled, from planning my next steps, over finishing my Webs
 - Going skydiving with my dad.
 <!-- - LSD trip. -->
 - And much more...
-
 ***
 
 ## Goals
