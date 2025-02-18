@@ -25,6 +25,12 @@ Usually you get hit with this question 1 to 2 months before your birthday or chr
 [NYMANE](https://www.ikea.com/ch/en/p/nymane-floor-reading-lamp-anthracite-50429198/)
 [NYMANE](https://www.ikea.com/ch/en/p/nymane-floor-lamp-with-3-spot-anthracite-80477734/)
 
+### TrailRunning / Trekking Shoes
+
+### Teekanne / Teenetz
+
+### Kerzenständer
+
 ### 3x Gym Mikrofaser Towel
 [80cm x 130cm towel](https://www.decathlon.ch/en/p/serviette-de-bain-microfibre-coral-taille-l-80-x-130-cm/_/R-p-158325?mc=8387956&gad_source=1&gclid=CjwKCAiA-ty8BhA_EiwAkyoa3w3xPvHxeVt8qmCrcYqyKPFkM49U3o-lr_s7RFB8DUTX7wPqtEe3gRoCI2IQAvD_BwE&utm_campaign=ch_t-perf_ct-pmax_n-watersport-accessory_ts-gen_f-cv_o-roas_spu-wat_pnl-ecom_l-en_pp-gads_bm-roa_pr-cpc_at-kwd_&utm_medium=cpc&utm_source=google) so that I can cover the machine and have a towel for several sessions per week. 
 
