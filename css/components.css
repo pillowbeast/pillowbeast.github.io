@@ -34,6 +34,17 @@ header {
     height: 2.4rem;
 }
 
+@media (max-width: 1250px) {
+    .header-title button {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .header-title b {
+        font-size: 4.8rem;
+    }
+}
+
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -77,6 +88,8 @@ header nav a:hover {
 
     .menu-button {
         display: block;
+        width: 4.8rem;
+        height: 4.8rem;
     }
 
     .rotated {
@@ -90,7 +103,7 @@ header nav a:hover {
     }
 
     .mobile-nav a {
-        font-size: 3.9rem;
+        font-size: 4.8rem;
     }
 }
 
@@ -203,6 +216,13 @@ main {
     justify-content: center;
 }
 
+@media (max-width: 900px), (max-aspect-ratio: 1 / 2) {
+    .icon {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+}
+
 .icon img {
     height: 100%;
     width: 100%;
@@ -285,7 +305,7 @@ main {
     border-radius: 4px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-aspect-ratio: 1 / 2) {
     .metadata-line {
         width: auto;
         max-height: none;
@@ -416,8 +436,6 @@ img.faded {
 /* =========== Book Report Summary =========== */
 .book-report-tile {
     width: 100%;
-    padding-top: var(--enough-space);
-    padding-bottom: var(--enough-space);
 
     display: flex;
     gap: var(--enough-space);
@@ -473,6 +491,7 @@ img.faded {
 .book-report-a {
     background: none;
     border: none;
+    padding-top: var(--minimal-space);
     color: var(--primary-color);
 }
 
@@ -503,15 +522,13 @@ img.faded {
     object-fit: cover;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1/2) {
     .book-report-tile {
         width: 100%;
-        padding-top: var(--enough-space);
-        padding-bottom: var(--enough-space);
 
         display: flex;
         flex-direction: column-reverse;
-        gap: 1.8rem;
+        gap: var(--special-space)
     }
 
     .book-report-container1 {
@@ -528,62 +545,10 @@ img.faded {
     }
 }
 
-/* =========== Book-Review =========== */
-.book-metadata-tile {
-    width: 200%;
-    max-width: 100vw;
-    margin-top: calc(-1 * var(--standard-space));
-    margin-bottom: var(--standard-space);
-    background-color: var(--primary-color);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.book-img-container {
-    height: 100%;
-    padding-right: 15vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.book-img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.book-img img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-}
-
-@media (max-width: 900px) {
-    .book-img-container {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-}
-
-.TLDR {
-    display: flex;
-    flex-direction: column;
-}
-
-.book-details {
-    padding-left: var(--minimal-space);
-}
-
 /* =========== Recipe Summary =========== */
 .recipe-tile {
     width: 100%;
     max-height: 550px;
-    padding-top: var(--enough-space);
-    padding-bottom: var(--enough-space);
 
     display: flex;
     gap: var(--standard-space);
@@ -656,16 +621,14 @@ img.faded {
     color: var(--secondary-color);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1/2) {
     .recipe-tile {
         width: 100%;
-        max-height: 550px;
-        padding-top: var(--enough-space);
-        padding-bottom: var(--enough-space);
+        max-height: 25%;
 
         display: flex;
         flex-direction: column-reverse;
-        gap: 1.8rem;
+        gap: var(--enough-space)
     }
 
     .recipe-container1 {
@@ -678,7 +641,7 @@ img.faded {
     }
 
     .recipe-img {
-        height: 35vh;
+        height: 30vh;
     }
 }
 
@@ -693,7 +656,7 @@ img.faded {
 
 .r-metadata-container {
     width: 100%;
-    max-height: 30vh;
+    max-height: 40vh;
 
     display: flex;
     flex-direction: row-reverse;
@@ -789,7 +752,17 @@ img.faded {
     flex-direction: column;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1/1) {
+    
+    .r-metadata-container {
+        flex-direction: column-reverse;
+    }
+
+
+    .r-img {
+        width: 100%;
+    }
+    
     .ingredients_and_steps {
         display: flex;
         flex-direction: column;
@@ -863,9 +836,9 @@ img.faded {
     font-style: italic;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1/2) {
     .page-summary {
-        font-size: 2.4rem;
+        font-size: 2.9rem;
     }
 }
 
@@ -879,9 +852,7 @@ img.faded {
 /* =========== Blogs =========== */
 .blog-entry {
     width: 100%;
-    height: 300px;
-    padding-top: var(--minimal-space);
-    padding-bottom: var(--special-space);
+    height: 210px;
     display: flex;
     flex-direction: row;
     gap: 4.8rem;
@@ -944,12 +915,10 @@ img.faded {
     padding-left: 0rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1/2){
     .blog-entry {
         width: 100%;
         height: auto;
-        padding-top: var(--minimal-space);
-        padding-bottom: var(--special-space);
 
         display: flex;
         flex-direction: column;
@@ -958,7 +927,7 @@ img.faded {
 
     .blog-img {
         width: 100%;
-        height: 200px;
+        height: 25vh;
     }
 
     .blog-content {
@@ -999,15 +968,6 @@ img.faded {
     grid-row: 2;
 
     padding: 0rem;
-}
-
-
-@media (max-width: 900px) {
-    .retro-entry {
-        width: auto;
-        height: auto;
-        padding-bottom: var(--enough-space);
-    }
 }
 
 /* =========== Retro Example Page =========== */
@@ -1059,19 +1019,6 @@ img.faded {
     color: var(--text-color);
     cursor: default;
     opacity: 0.5;
-}
-
-@media (max-width: 900px) {
-    .retro-title-container {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    .back-and-forth-button-container a {
-        font-size: 3.9rem;
-    }
 }
 
 /* =========== About Page =========== */
@@ -1158,7 +1105,7 @@ img.faded {
     object-fit: cover;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1/1) {
     .about-container {
         flex-direction: column-reverse;
     }
@@ -1171,7 +1118,7 @@ img.faded {
     }
 
     .a-img {
-        width: 100%;
+        width: 60wh;
     }
 }
 
@@ -1365,8 +1312,7 @@ img.faded {
     text-align: right;
 }
 
-@media (max-width: 900px) {
-
+@media (max-width: 900px), (max-width: 1250px) and (max-aspect-ratio: 1.2/2) {
     .inline-img.left .img-container,
     .inline-img.right .img-container {
         float: none;
@@ -1374,7 +1320,6 @@ img.faded {
         max-width: 100%;
         text-align: left;
         padding: 0rem;
-        /* padding-left: var(--enough-space); */
     }
 
     .inline-img.right .img-container p {
