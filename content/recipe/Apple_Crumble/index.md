@@ -4,7 +4,12 @@ date: 2025-01-28T11:24:48+01:00
 
 metadata:
   rating: "8/10"
-summary: "Write a short description of the recipe here."
+summary: "P-P-A-P,
+I have a pie, I have a apple
+Uh, apple-pie
+I have a pie, I have pineapple
+Uh, pineapple-pie
+Apple-pie, pineapple-pie"
 cookDetails:
   prepTime: "25 min"
   cookTime: "45 min"
@@ -41,6 +46,6 @@ tags: [Desert]
 
 ## The Origin
 
-Write a short introduction or story about the recipe here. Share its history, inspiration, or personal connection.
+This recipe is a classic from my mom's. My mother is an expert at conjuring up elaborate dinners, ranging from starters to desserts. One of my favourite desserts is the Apple Crumble the perfect combos of juicy & warm apples with the crunchy & fatty crumble on top and a scoop of cold ice cream on the side is amazing.
 
 {{< recipe >}}

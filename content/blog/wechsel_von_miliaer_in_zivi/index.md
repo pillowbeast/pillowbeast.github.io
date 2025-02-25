@@ -13,6 +13,8 @@ draft: false
 
 Das Schweizer Militär war für mich so etwas wie eine Integrationsübung. Hier habe ich das erste Mal den Zwang verspürt auf Schweizerdeutsch zu reden um mich zu integrieren. Deshalb, war und bin ich ein vehementer Vertreter des Militärs, welches vielen jungen Männern (und vielleicht auch Frauen in der Zukunft) die Möglichkeit gibt Disziplin zu erlernen, aus ihrer Blase herauszutreten und Selbstständigkeit zu üben.
 
+---
+
 ## Wieso
 
 {{< inline-img src="images/militaer_bres.png" caption="Biolabor bei der Ausfahrt in der Verbandsübung" alignment="right" max-width="50%" >}}
@@ -33,5 +35,20 @@ Daher heisst es am 16.01 Einführungstag in den Zivildienst, einen Tag auf den N
 ## Einsatz Organisation
 
 Nach dem Wechsel (ein Tag Einführung) bin ich nun bereits meinen ersten (und daher auch letzten) Einsatz am Planen. Ich habe zwei Ideen, entweder mache ich einen Einsatz bei einer Forschungseinrichtung wie dem EAWAG **Swiss Federal Institute of Aquatic Science and Technology** oder gehe in die Berge und betreibe **Wanderwegpflege** beides kann ich mir gut vorstelle. Da ich die Wanderwegpflege in der Zukunft wahrscheinlich nicht mehr machen kann, lehne ich momentan dahin. Trotzdem interessiert mich das Eawag, da es sehr interdisziplinäre Fähigkeiten verlangt. Zum Beispiel darf ich Javascript für Frontend Development benutzen um eine WebApp für die Schweizerbevölkerung zu programmieren und ich darf Python benutzen um im Backend zu scripten.
+
+---
+
+## Material Retablierung
+
+
+{{< inline-img src="images/Mat_komplett.jpg" caption="Fast vollständiges PA Material">}}
+Folgend auf den Wechsel muss man sein gesamtes PA-Material wieder abgeben, zuvor habe ich das Material ausgelegt und nochmals gewaschen um sicher zu stellen, dass ich alles habe. Dabei ist mir aufgefallen, dass ich mein Schweizer Sackmesser nicht mehr habe (Kostenpunkt 25.-). Das Ganze habe ich bei der Retablierungsstelle in Zug abgegeben, 30 Minuten alles checken, auslegen, 25.- zahlen und dann war meine ganzes Material abgegeben.
+{{< /inline-img >}}
+
+{{< inline-img src="images/goodbye_gf.jpg" caption="Mein liebgewonnenes Sturmgewehr 90...">}}
+Leider musste ich auch mein Sturmgewehr 90 abgeben, das Schiessen und Besitzen der Waffe war eine der coolsten Dinge am Militär...
+{{< /inline-img >}}
+
+{{< gallery src="images/memories" >}}
 
 [^1]: Ich dachte, es wird Zeit, dass ich den Bunker verlass; Daraufhin schrieb meine Mutter ein Fax (Anlehnung an 'Leben und Tod des Kenneth Glöckler')
