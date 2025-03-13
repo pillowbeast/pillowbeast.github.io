@@ -36,6 +36,17 @@ pdftk *.pdf cat output merged.pdf  # Merge in alphabetical order.
 ```
 Package for Linux that let's you combine two pdfs into one.
 
+### ETH
+EULER, VPN
+```bash
+# Run Euler
+ssh username@euler.ethz.ch
+# Use VPN -> Install the cisco client
+# connect to
+sslvpn.ethz.ch/student-net
+```
+
+
 
 
 
