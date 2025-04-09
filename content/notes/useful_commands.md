@@ -55,3 +55,13 @@ sslvpn.ethz.ch/student-net
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
+
+### EAS (Expo Build Tool)
+
+```bash
+npm install -g eas-cli
+eas login 
+eas build:configure
+eas build -p android --profile production
+eas credentials  # Download your Android keystore (required for updating app on Play Store)
+```
