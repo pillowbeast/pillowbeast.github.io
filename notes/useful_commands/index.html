@@ -1,5 +1,4 @@
-<!doctype html><html><head><meta charset=UTF-8><meta name=viewport content width=device-width, initial-scale=1><title>Commands Dump · Yannik's Portfolio</title>
-<link rel=icon type=image/png sizes=32x32 href=https://pillowbeast.github.io/favicon_io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://pillowbeast.github.io/favicon_io/favicon-16x16.png><link rel=apple-touch-icon href=https://pillowbeast.github.io/favicon_io/apple-touch-icon.png><link rel=icon type=image/png sizes=192x192 href=https://pillowbeast.github.io/favicon_io/android-chrome-192x192.png><link rel=icon type=image/png sizes=512x512 href=https://pillowbeast.github.io/favicon_io/android-chrome-512x512.png><style>:root{--primary-color:#8ED6CB;--secondary-color:#8F45A5;--footer-text:"Crafted with ❤︎ in Zurich."}</style><link rel=stylesheet href=https://pillowbeast.github.io/css/main.css><link id=syntax-theme rel=stylesheet href=/css/syntax_light.css><script type=module src=https://pillowbeast.github.io/js/main.min.716bb20d69f25f7e5ac81a6e522aaa5ba2e25125c9d7aa240ea68d381e4efbd7.js></script></head><body><button id=move-up-button class=not-visible>❯</button>
+<!doctype html><html><head><meta charset=UTF-8><meta name=viewport content width=device-width, initial-scale=1><title>Commands Dump · Yannik's Portfolio</title><link rel=icon type=image/png sizes=32x32 href=https://pillowbeast.github.io/favicon_io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://pillowbeast.github.io/favicon_io/favicon-16x16.png><link rel=apple-touch-icon href=https://pillowbeast.github.io/favicon_io/apple-touch-icon.png><link rel=icon type=image/png sizes=192x192 href=https://pillowbeast.github.io/favicon_io/android-chrome-192x192.png><link rel=icon type=image/png sizes=512x512 href=https://pillowbeast.github.io/favicon_io/android-chrome-512x512.png><style>:root{--primary-color:#8ED6CB;--secondary-color:#8F45A5;--footer-text:"Crafted with ❤︎ in Zurich."}</style><link rel=stylesheet href=https://pillowbeast.github.io/css/main.css><link id=syntax-theme rel=stylesheet href=/css/syntax_light.css><script type=module src=https://pillowbeast.github.io/js/main.min.716bb20d69f25f7e5ac81a6e522aaa5ba2e25125c9d7aa240ea68d381e4efbd7.js></script></head><body><button id=move-up-button class=not-visible>❯</button>
 <button id=move-down-button class=not-visible>❮</button><div id=wrapper><header><div class=header-container><div class=header-title><a href=https://pillowbeast.github.io/><b>Yannik's Portfolio</b>
 </a><button class="dark-mode-toggle icon">
 <img alt=DarkMode id=dark-mode-toggle-img data-moon=https://pillowbeast.github.io/icons/moon-solid.svg data-sun=https://pillowbeast.github.io/icons/sun-solid.svg></button></div><nav><a href=https://pillowbeast.github.io/blog/>Blog</a>
@@ -20,9 +19,37 @@
 </span></span><span class=line><span class=cl><span class=c1># Use VPN -&gt; Install the cisco client</span>
 </span></span><span class=line><span class=cl><span class=c1># connect to</span>
 </span></span><span class=line><span class=cl>sslvpn.ethz.ch/student-net
-</span></span></code></pre></div><h3 id=git>GIT</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># global is not needed needed</span>
+</span></span></code></pre></div><h3 id=git>GIT</h3><p>Configuration:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># global is not needed needed</span>
 </span></span><span class=line><span class=cl>git config --global user.name <span class=s2>&#34;Your Name&#34;</span>
 </span></span><span class=line><span class=cl>git config --global user.email <span class=s2>&#34;your.email@example.com&#34;</span>
+</span></span></code></pre></div><p>Proper Usage:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 0) make sure you’re up-to-date</span>
+</span></span><span class=line><span class=cl>git clone &lt;url&gt;
+</span></span><span class=line><span class=cl>git checkout main
+</span></span><span class=line><span class=cl>git pull origin main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 1) create &amp; switch to a new branch</span>
+</span></span><span class=line><span class=cl>git checkout -b my-feature
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2) do the work → add / commit as you go</span>
+</span></span><span class=line><span class=cl>git add .
+</span></span><span class=line><span class=cl>git commit -m <span class=s2>&#34;feat: implement X&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3) push branch to remote so others / CI can see it</span>
+</span></span><span class=line><span class=cl>git push -u origin my-feature   <span class=c1># -u sets upstream tracking</span>
+</span></span></code></pre></div><p>Pull Requests for Code Review (2 Options)</p><p>Either Open Pull Request for Code Review via the UI or</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gh pr create
+</span></span></code></pre></div><p>Merging</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 1) after work is approved, switch back to main</span>
+</span></span><span class=line><span class=cl>git checkout main
+</span></span><span class=line><span class=cl>git pull origin main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2) merge the feature in</span>
+</span></span><span class=line><span class=cl>git merge my-feature
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3) push updated main to the remote</span>
+</span></span><span class=line><span class=cl>git push origin main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 4) clean up the branch</span>
+</span></span><span class=line><span class=cl>git branch -d my-feature        <span class=c1># delete local copy (-D to force if unmerged)</span>
+</span></span><span class=line><span class=cl>git push origin --delete my-feature   <span class=c1># remove remote branch</span>
 </span></span></code></pre></div><h3 id=eas-expo-build-tool>EAS (Expo Build Tool)</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>npm install -g eas-cli
 </span></span><span class=line><span class=cl>eas login 
 </span></span><span class=line><span class=cl>eas build:configure
