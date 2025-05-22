@@ -50,10 +50,55 @@ sslvpn.ethz.ch/student-net
 
 ### GIT
 
+Configuration:
+
 ```bash
 # global is not needed needed
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
+```
+
+Proper Usage:
+
+```bash
+# 0) make sure you’re up-to-date
+git clone <url>
+git checkout main
+git pull origin main
+
+# 1) create & switch to a new branch
+git checkout -b my-feature
+
+# 2) do the work → add / commit as you go
+git add .
+git commit -m "feat: implement X"
+
+# 3) push branch to remote so others / CI can see it
+git push -u origin my-feature   # -u sets upstream tracking
+```
+Pull Requests for Code Review (2 Options)
+
+Either Open Pull Request for Code Review via the UI or 
+```bash
+gh pr create
+```
+
+Merging
+
+```bash
+# 1) after work is approved, switch back to main
+git checkout main
+git pull origin main
+
+# 2) merge the feature in
+git merge my-feature
+
+# 3) push updated main to the remote
+git push origin main
+
+# 4) clean up the branch
+git branch -d my-feature        # delete local copy (-D to force if unmerged)
+git push origin --delete my-feature   # remove remote branch
 ```
 
 ### EAS (Expo Build Tool)
