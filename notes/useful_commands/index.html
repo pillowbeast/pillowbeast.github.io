@@ -22,6 +22,52 @@
 </span></span></code></pre></div><h3 id=python-venv>Python VENV</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>python3 -m venv .venv
 </span></span><span class=line><span class=cl><span class=nb>source</span> .venv/bin/activate <span class=c1># Linux / MacOS</span>
 </span></span><span class=line><span class=cl>pip install -r requirements.txt
+</span></span></code></pre></div><h3 id=python-miniforgemamba>Python Miniforge/Mamba</h3><p>We install Miniforge and Mamba so that we only use Conda-Forge as our channel, so that only open-source distributions are used and so that we can benefit from the speed of Mamba.</p><p>Installation</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Where to put Miniforge</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>CONDA_ROOT</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/miniforge3&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Download the latest installer for Linux x86-64</span>
+</span></span><span class=line><span class=cl>curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+</span></span><span class=line><span class=cl><span class=c1># Install silently (-b) into $CONDA_ROOT</span>
+</span></span><span class=line><span class=cl>bash Miniforge3-Linux-x86_64.sh -b -p <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Write the new init stub into ~/.bashrc (or ~/.zshrc) …</span>
+</span></span><span class=line><span class=cl><span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>/bin/conda&#34;</span> init
+</span></span><span class=line><span class=cl><span class=c1># …then start a fresh shell so the new PATH is in effect</span>
+</span></span><span class=line><span class=cl><span class=nb>exec</span> <span class=s2>&#34;</span><span class=nv>$SHELL</span><span class=s2>&#34;</span> -l
+</span></span><span class=line><span class=cl><span class=c1># Check channels</span>
+</span></span><span class=line><span class=cl>conda config --show channels
+</span></span><span class=line><span class=cl><span class=c1># Install Mamba into base</span>
+</span></span><span class=line><span class=cl>conda activate base
+</span></span><span class=line><span class=cl>conda install -n base mamba -c conda-forge
+</span></span><span class=line><span class=cl><span class=c1># Make (&#34;mamba activate&#34; instead of &#34;conda activate&#34;)</span>
+</span></span><span class=line><span class=cl>mamba shell init --shell bash --root-prefix <span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/miniforge3&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># then start a fresh terminal</span>
+</span></span><span class=line><span class=cl><span class=nb>exec</span> <span class=s2>&#34;</span><span class=nv>$SHELL</span><span class=s2>&#34;</span> -l
+</span></span><span class=line><span class=cl><span class=c1># so that it is not always active / this way we could potentially work in venvs locally</span>
+</span></span><span class=line><span class=cl>conda config --set auto_activate_base <span class=nb>false</span>
+</span></span></code></pre></div><p>Setup Environment.
+From scratch</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Create &amp; activate &#39;development&#39; env</span>
+</span></span><span class=line><span class=cl>mamba create -n &lt;env-name&gt; <span class=nv>python</span><span class=o>=</span>3.&lt;version-number&gt;
+</span></span><span class=line><span class=cl>mamba activate &lt;env-name&gt;
+</span></span><span class=line><span class=cl><span class=c1># Install involved libs in one go (better in one line)</span>
+</span></span><span class=line><span class=cl>mamba install <span class=s2>&#34;numpy=&lt;version-number&gt;&#34;</span> scipy ...
+</span></span><span class=line><span class=cl><span class=c1># Install any pip-only packages</span>
+</span></span><span class=line><span class=cl>pip install &lt;pypi-package&gt;
+</span></span><span class=line><span class=cl><span class=c1># Export for reproducibility</span>
+</span></span><span class=line><span class=cl>mamba env <span class=nb>export</span> -n &lt;env-name&gt; &gt; environment.yml
+</span></span></code></pre></div><p>From <strong>environment.yml</strong>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>mamba env create -f environment.yml
+</span></span><span class=line><span class=cl>mamba activate &lt;name&gt; <span class=c1># name from environment.yml</span>
+</span></span></code></pre></div><h3 id=docker>Docker</h3><p>Setup Docker as rootful user (admin priviledges, if solo-developer on machine)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Quick installer (skip the manual GPG steps)</span>
+</span></span><span class=line><span class=cl>curl -fsSL https://get.docker.com <span class=p>|</span> sudo sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Allow your user to run Docker without sudo  (rootful path)</span>
+</span></span><span class=line><span class=cl>sudo usermod -aG docker <span class=nv>$USER</span>
+</span></span><span class=line><span class=cl>newgrp docker   <span class=c1># or log out/in</span>
+</span></span><span class=line><span class=cl>docker context ls
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Test</span>
+</span></span><span class=line><span class=cl>docker run --rm hello-world
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Remove unused images/containers -&gt; Run from time to time.</span>
+</span></span><span class=line><span class=cl>docker system prune -af
 </span></span></code></pre></div><h3 id=git>GIT</h3><p>Configuration:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># global is not needed needed</span>
 </span></span><span class=line><span class=cl>git config --global user.name <span class=s2>&#34;Your Name&#34;</span>
 </span></span><span class=line><span class=cl>git config --global user.email <span class=s2>&#34;your.email@example.com&#34;</span>
