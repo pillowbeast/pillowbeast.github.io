@@ -56,6 +56,77 @@ source .venv/bin/activate # Linux / MacOS
 pip install -r requirements.txt
 ```
 
+### Python Miniforge/Mamba
+
+We install Miniforge and Mamba so that we only use Conda-Forge as our channel, so that only open-source distributions are used and so that we can benefit from the speed of Mamba.
+
+Installation
+
+```bash
+# Where to put Miniforge
+export CONDA_ROOT="$HOME/miniforge3"
+# Download the latest installer for Linux x86-64
+curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+# Install silently (-b) into $CONDA_ROOT
+bash Miniforge3-Linux-x86_64.sh -b -p "$CONDA_ROOT"
+# Write the new init stub into ~/.bashrc (or ~/.zshrc) …
+"$CONDA_ROOT/bin/conda" init
+# …then start a fresh shell so the new PATH is in effect
+exec "$SHELL" -l
+# Check channels
+conda config --show channels
+# Install Mamba into base
+conda activate base
+conda install -n base mamba -c conda-forge
+# Make ("mamba activate" instead of "conda activate")
+mamba shell init --shell bash --root-prefix "$HOME/miniforge3"
+# then start a fresh terminal
+exec "$SHELL" -l
+# so that it is not always active / this way we could potentially work in venvs locally
+conda config --set auto_activate_base false
+```
+
+Setup Environment.
+From scratch
+
+```bash
+# Create & activate 'development' env
+mamba create -n <env-name> python=3.<version-number>
+mamba activate <env-name>
+# Install involved libs in one go (better in one line)
+mamba install "numpy=<version-number>" scipy ...
+# Install any pip-only packages
+pip install <pypi-package>
+# Export for reproducibility
+mamba env export -n <env-name> > environment.yml
+```
+
+From **environment.yml**.
+
+```bash
+mamba env create -f environment.yml
+mamba activate <name> # name from environment.yml
+```
+
+### Docker
+
+Setup Docker as rootful user (admin priviledges, if solo-developer on machine)
+
+```bash
+# Quick installer (skip the manual GPG steps)
+curl -fsSL https://get.docker.com | sudo sh
+
+# Allow your user to run Docker without sudo  (rootful path)
+sudo usermod -aG docker $USER
+newgrp docker   # or log out/in
+docker context ls
+
+# Test
+docker run --rm hello-world
+
+# Remove unused images/containers -> Run from time to time.
+docker system prune -af
+```
 
 ### GIT
 
