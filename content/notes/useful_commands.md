@@ -48,6 +48,15 @@ ssh username@euler.ethz.ch
 sslvpn.ethz.ch/student-net
 ```
 
+### Python VENV
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate # Linux / MacOS
+pip install -r requirements.txt
+```
+
+
 ### GIT
 
 Configuration:
