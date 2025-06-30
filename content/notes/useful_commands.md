@@ -64,7 +64,10 @@ Installation
 
 ```bash
 # Where to put Miniforge
-export CONDA_ROOT="$HOME/miniforge3"
+export CONDA_ROOT="/opt/miniforge3"
+# Prepare the directory
+sudo mkdir -p "$CONDA_ROOT"
+sudo chown "$USER":"$USER" "$CONDA_ROOT"
 # Download the latest installer for Linux x86-64
 curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 # Install silently (-b) into $CONDA_ROOT
@@ -79,7 +82,7 @@ conda config --show channels
 conda activate base
 conda install -n base mamba -c conda-forge
 # Make ("mamba activate" instead of "conda activate")
-mamba shell init --shell bash --root-prefix "$HOME/miniforge3"
+mamba shell init --shell bash --root-prefix "$CONDA_ROOT"
 # then start a fresh terminal
 exec "$SHELL" -l
 # so that it is not always active / this way we could potentially work in venvs locally
@@ -189,4 +192,32 @@ eas login
 eas build:configure
 eas build -p android --profile production
 eas credentials  # Download your Android keystore (required for updating app on Play Store)
+```
+
+### AppImage Update/Installation
+
+```bash
+# Update Only
+sudo find /opt -iname "*<application_name>*" 2>/dev/null
+sudo rm -f /opt/<application_name>.AppImage
+
+# Both
+sudo mv ~/Downloads/<application_name>.AppImage /opt/<application_name>.AppImage 
+sudo chmod +x /opt/<application_name>.AppImage
+
+# Installation Only
+touch ~/.local/share/applications/<application_name>.desktop
+nano ~/.local/share/applications/<application_name>.desktop
+# add text to .desktop file
+[Desktop Entry]
+Name=Cursor
+Exec=/opt/Cursor.AppImage
+Icon=/opt/cursor.png
+Type=Application
+Categories=Development;IDE;
+StartupNotify=true
+Terminal=false
+
+# Both
+update-desktop-database ~/.local/share/applications/
 ```
