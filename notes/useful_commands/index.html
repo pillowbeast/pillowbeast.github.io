@@ -23,7 +23,10 @@
 </span></span><span class=line><span class=cl><span class=nb>source</span> .venv/bin/activate <span class=c1># Linux / MacOS</span>
 </span></span><span class=line><span class=cl>pip install -r requirements.txt
 </span></span></code></pre></div><h3 id=python-miniforgemamba>Python Miniforge/Mamba</h3><p>We install Miniforge and Mamba so that we only use Conda-Forge as our channel, so that only open-source distributions are used and so that we can benefit from the speed of Mamba.</p><p>Installation</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Where to put Miniforge</span>
-</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>CONDA_ROOT</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/miniforge3&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>CONDA_ROOT</span><span class=o>=</span><span class=s2>&#34;/opt/miniforge3&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Prepare the directory</span>
+</span></span><span class=line><span class=cl>sudo mkdir -p <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>sudo chown <span class=s2>&#34;</span><span class=nv>$USER</span><span class=s2>&#34;</span>:<span class=s2>&#34;</span><span class=nv>$USER</span><span class=s2>&#34;</span> <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl><span class=c1># Download the latest installer for Linux x86-64</span>
 </span></span><span class=line><span class=cl>curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
 </span></span><span class=line><span class=cl><span class=c1># Install silently (-b) into $CONDA_ROOT</span>
@@ -38,7 +41,7 @@
 </span></span><span class=line><span class=cl>conda activate base
 </span></span><span class=line><span class=cl>conda install -n base mamba -c conda-forge
 </span></span><span class=line><span class=cl><span class=c1># Make (&#34;mamba activate&#34; instead of &#34;conda activate&#34;)</span>
-</span></span><span class=line><span class=cl>mamba shell init --shell bash --root-prefix <span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/miniforge3&#34;</span>
+</span></span><span class=line><span class=cl>mamba shell init --shell bash --root-prefix <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
 </span></span><span class=line><span class=cl><span class=c1># then start a fresh terminal</span>
 </span></span><span class=line><span class=cl><span class=nb>exec</span> <span class=s2>&#34;</span><span class=nv>$SHELL</span><span class=s2>&#34;</span> -l
 </span></span><span class=line><span class=cl><span class=c1># so that it is not always active / this way we could potentially work in venvs locally</span>
@@ -104,6 +107,29 @@ From scratch</p><div class=highlight><pre tabindex=0 class=chroma><code class=la
 </span></span><span class=line><span class=cl>eas build:configure
 </span></span><span class=line><span class=cl>eas build -p android --profile production
 </span></span><span class=line><span class=cl>eas credentials  <span class=c1># Download your Android keystore (required for updating app on Play Store)</span>
+</span></span></code></pre></div><h3 id=appimage-updateinstallation>AppImage Update/Installation</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Update Only</span>
+</span></span><span class=line><span class=cl>sudo find /opt -iname <span class=s2>&#34;*&lt;application_name&gt;*&#34;</span> 2&gt;/dev/null
+</span></span><span class=line><span class=cl>sudo rm -f /opt/&lt;application_name&gt;.AppImage
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Both</span>
+</span></span><span class=line><span class=cl>sudo mv ~/Downloads/&lt;application_name&gt;.AppImage /opt/&lt;application_name&gt;.AppImage 
+</span></span><span class=line><span class=cl>sudo chmod +x /opt/&lt;application_name&gt;.AppImage
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Installation Only</span>
+</span></span><span class=line><span class=cl>touch ~/.local/share/applications/&lt;application_name&gt;.desktop
+</span></span><span class=line><span class=cl>nano ~/.local/share/applications/&lt;application_name&gt;.desktop
+</span></span><span class=line><span class=cl><span class=c1># add text to .desktop file</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>Desktop Entry<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=nv>Name</span><span class=o>=</span>Cursor
+</span></span><span class=line><span class=cl><span class=nv>Exec</span><span class=o>=</span>/opt/Cursor.AppImage
+</span></span><span class=line><span class=cl><span class=nv>Icon</span><span class=o>=</span>/opt/cursor.png
+</span></span><span class=line><span class=cl><span class=nv>Type</span><span class=o>=</span>Application
+</span></span><span class=line><span class=cl><span class=nv>Categories</span><span class=o>=</span>Development<span class=p>;</span>IDE<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>StartupNotify</span><span class=o>=</span><span class=nb>true</span>
+</span></span><span class=line><span class=cl><span class=nv>Terminal</span><span class=o>=</span><span class=nb>false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Both</span>
+</span></span><span class=line><span class=cl>update-desktop-database ~/.local/share/applications/
 </span></span></code></pre></div></div></main><footer><div class=footer-container><p>Crafted with ❤︎ in Zurich.</p><div class=footer-icons><a href=https://https://open.spotify.com/user/pillowbeast target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/spotify.svg alt=Spotify>
 </a><a href=https://github.com/pillowbeast target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/github.svg alt=GitHub>
 </a><a href=https://www.linkedin.com/in/yannik-werner target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/linkedin.svg alt=LinkedIn>
