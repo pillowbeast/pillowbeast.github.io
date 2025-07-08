@@ -1,5 +1,6 @@
 # pillowbeast.github.io
 
-some change
-some more changes
-PAT
+```bash
+git submodule init
+git submodule update
+```
