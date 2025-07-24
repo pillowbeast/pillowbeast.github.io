@@ -58,6 +58,7 @@ From scratch</p><div class=highlight><pre tabindex=0 class=chroma><code class=la
 </span></span><span class=line><span class=cl>mamba env <span class=nb>export</span> -n &lt;env-name&gt; &gt; environment.yml
 </span></span></code></pre></div><p>From <strong>environment.yml</strong>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>mamba env create -f environment.yml
 </span></span><span class=line><span class=cl>mamba activate &lt;name&gt; <span class=c1># name from environment.yml</span>
+</span></span><span class=line><span class=cl>mamba env remove --name &lt;name&gt;
 </span></span></code></pre></div><h3 id=docker>Docker</h3><p>Setup Docker as rootful user (admin priviledges, if solo-developer on machine)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Quick installer (skip the manual GPG steps)</span>
 </span></span><span class=line><span class=cl>curl -fsSL https://get.docker.com <span class=p>|</span> sudo sh
 </span></span><span class=line><span class=cl>
