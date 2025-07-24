@@ -109,6 +109,7 @@ From **environment.yml**.
 ```bash
 mamba env create -f environment.yml
 mamba activate <name> # name from environment.yml
+mamba env remove --name <name>
 ```
 
 ### Docker
