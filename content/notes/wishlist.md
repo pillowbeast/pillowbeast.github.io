@@ -17,17 +17,17 @@ Usually you get hit with this question 1 to 2 months before your birthday or chr
 
 ## Wishes[^1]
 
-### Trail Running Vest
+### Hair Products
 
-I would love to own any [Trail Running Vest](https://ultraspire.com/products/alpha-6-0-race-vest/?subId1=irfbgoutdoorhydrationpacks). The specifics are: a water bladder (1-2 liters) and a range between 5-8 liters of capacity. Actually any vest in that range goes; I have seen some in Decathlon and some over AliExpress.
+For my hair I am thinking of going from a **Loose Quiff** to a **Slicked-Back Undercut** over the next 4-6 months, therefore I require a blow dryer, Blumann Monarch Matte Hair Cream & Sea Salt Spray :)
 
 ### Teekanne
 
 A [tea pot ](https://www.galaxus.ch/de/s2/product/bredemeijer-jang-080-l-teekanne-9968623) from Galaxus in a similar style to what I already imported from China myself (lol).
 
-### Plants
+### Plant Pot
 
-Pastell and artsy pot with an uncomplicated plant to give some life to my room!
+I recently acquired two cute little baby plants for which I am looking for an artsy pastell pot to give some life to my room!
 
 ### Arcteryx Rainjacket
 
@@ -44,8 +44,14 @@ Nasal endoscopy or airflow test done by an ENT doctor, as I am struggling hard w
 <!-- ### 3x Gym Mikrofaser Towel
 [80cm x 130cm towel](https://www.decathlon.ch/en/p/serviette-de-bain-microfibre-coral-taille-l-80-x-130-cm/_/R-p-158325?mc=8387956&gad_source=1&gclid=CjwKCAiA-ty8BhA_EiwAkyoa3w3xPvHxeVt8qmCrcYqyKPFkM49U3o-lr_s7RFB8DUTX7wPqtEe3gRoCI2IQAvD_BwE&utm_campaign=ch_t-perf_ct-pmax_n-watersport-accessory_ts-gen_f-cv_o-roas_spu-wat_pnl-ecom_l-en_pp-gads_bm-roa_pr-cpc_at-kwd_&utm_medium=cpc&utm_source=google) so that I can cover the machine and have a towel for several sessions per week. 
 -->
+
 <!-- 
 ### 12x Underwear
 Either [normal](https://www.zalando.ch/pier-one-7-pack-boxershorts-pi982o054-q11.html) or proper briefs (black, white, gray) that make your booty pop. All of them in the same color, please!! -->
+
+<!-- ### Trail Running Vest
+
+I would love to own any [Trail Running Vest](https://ultraspire.com/products/alpha-6-0-race-vest/?subId1=irfbgoutdoorhydrationpacks). The specifics are: a water bladder (1-2 liters) and a range between 5-8 liters of capacity. Actually any vest in that range goes; I have seen some in Decathlon and some over AliExpress. -->
+
 
 [^1]: The wishes are not in order.
