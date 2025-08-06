@@ -17,9 +17,13 @@ Usually you get hit with this question 1 to 2 months before your birthday or chr
 
 ## Wishes[^1]
 
+### Helinox Chair Zero
+
+The [Helinox Chair Zero](https://www.baechli-bergsport.ch/de/ausrustung/camping/campingmobel/helinox-55391-chair-zero?srsltid=AfmBOooNRwrEB0fZqO4OXYZFN-oKfBYPfJDYLpF8TDikq_hAsjEkz5Va) is the perfect addition for a comfortable camping trip. With the portable chair even wet surfaces allow to sit up straight for eating and chilling.
+
 ### Hair Products
 
-For my hair I am thinking of going from a **Loose Quiff** to a **Slicked-Back Undercut** over the next 4-6 months, therefore I require a blow dryer, Blumann Monarch Matte Hair Cream & Sea Salt Spray :)
+For my hair I am thinking of going from a **Loose Quiff** to a **Slicked-Back Undercut** over the next 4-6 months, therefore I require a blow dryer, [Blumann Monarch](https://www.moquer.de/blumaan-matte-cream-clay-71-gr?gad_source=1&gad_campaignid=18349168699&gbraid=0AAAAADne32YJ1EI4HYzKP8MESEgxUGEIB&gclid=CjwKCAjw-svEBhB6EiwAEzSdrgfHctUq-HAUbL4fRosfzaXK4Kdj6S9K4pKnbpy02qwWjHKMwDGFxxoCu-sQAvD_BwE) Matte Hair Cream & Sea Salt Spray :)
 
 ### Teekanne
 
