@@ -21,9 +21,9 @@ Usually you get hit with this question 1 to 2 months before your birthday or chr
 
 The [Helinox Chair Zero](https://www.baechli-bergsport.ch/de/ausrustung/camping/campingmobel/helinox-55391-chair-zero?srsltid=AfmBOooNRwrEB0fZqO4OXYZFN-oKfBYPfJDYLpF8TDikq_hAsjEkz5Va) is the perfect addition for a comfortable camping trip. With the portable chair even wet surfaces allow to sit up straight for eating and chilling. -->
 
-### Portmonnaie
+### Biking Rear Light
 
-My old portemonnaie is dead. I was thinking of going in the direction of [F705 SECRID x FREITAG 572916](https://freitag.ch/de_DE/products/f705-secrid-x-freitag?v=010000572916) Crad protector Wallet from Freitag. (95.-)
+My old rear light suffers from **Wackelkontakt**... For safety reasons I would like a new Rear Light [Knog Blinder Square](https://www.knog.com/products/blinder-rear-bike-light?variant=43150517141744). (~40.-)
 
 ### Hair Products
 
