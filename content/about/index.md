@@ -10,5 +10,5 @@ cv_document: "CV_YW_2025_01.pdf"
 image: "images/me.png"
 notable_events:
   # - url: "project/hike_throug"
-  - url: "project/half-marathon-lucerne"
+  - url: "project/2024_10_half_marathon_lucerne"
 ---

@@ -13,9 +13,11 @@ draft: false
 ## Preparation
 
 ### The Plan
+
 In the spring/summer of 2025 I will embark on a journey through the Alps. The goal is to start on the Eastern part and make my way across several passes and peaks towards the mediterranean sea in the west. The journey will commence in the East of Switzerland and take me through France and Italy.
 
 Für die Planung der Route habe ich folgende Kriterien berücksichtigt:
+
 - **Landschaftliche Schönheit:** Die Route soll durch abwechslungsreiche Landschaften führen, die die Schönheit der Alpen widerspiegeln.
 - **Herausforderung:** Die Route soll anspruchsvolle Abschnitte enthalten, die meine körperliche und mentale Stärke herausfordern.
 - **Gipfel & Pässe**: Die Route soll mich über einige der bekanntesten Gipfel und Pässe der Alpen führen, um die Vielfalt und Schönheit der Region zu erleben.
@@ -24,15 +26,17 @@ Für die Planung der Route habe ich folgende Kriterien berücksichtigt:
 Die Suche habe ich vor allem mit der **SwissTopo App** und der [SchweizMobil Wanderkarte](https://schweizmobil.ch/de/wanderland/route-3?f_grades=medium%2Cdifficult&f_fitness=difficult) durchgeführt. Weitere Ideen und Etappenplanung mache ich mit Komoot.
 
 Einige Ideen sind:
+
 - **Via Alpina**; Route 1:
 - **Alpenpässe-Weg**; Route 6:
 - **Walserweg**; Route 35:
 - **ViaBerna**; Route 38:
 - **Sentiero della Pace**; Friedenswanderweg am Gardasee
 
-Laut dem ViaAlpina kann man für 120 ETappen unterwegs sein, von Triest über die Zugspitze/Vaduz und Grindelwald nach Monaco. Dabei macht man Tagesetappen von ungefähr 20km und 1000 Höhenmetern, also ungefähr 6-6.5 Stunden tägliche Laufzeit. 
+Laut dem ViaAlpina kann man für 120 ETappen unterwegs sein, von Triest über die Zugspitze/Vaduz und Grindelwald nach Monaco. Dabei macht man Tagesetappen von ungefähr 20km und 1000 Höhenmetern, also ungefähr 6-6.5 Stunden tägliche Laufzeit.
 
 ### Gear
+
 - **Backpack**
 - **Tent**
 - **Sleeping Bag**
@@ -42,16 +46,15 @@ Laut dem ViaAlpina kann man für 120 ETappen unterwegs sein, von Triest über di
 - **Headlamp**
 - **First Aid Kit**
 - **Clothing**
-    - **Hiking Boots**
-    - **Rain Jacket**
-    - **Fleece**
-    - **Trekking Pants**
-    - **Trekking Socks**
-    - **Cap**
-    - **Gloves**
-    - **Sunglasses**
-    - **Hat**
+  - **Hiking Boots**
+  - **Rain Jacket**
+  - **Fleece**
+  - **Trekking Pants**
+  - **Trekking Socks**
+  - **Cap**
+  - **Gloves**
+  - **Sunglasses**
+  - **Hat**
 - **Food**
 - **Water**
 - **Map**/**SwissTopoApp**
-
