@@ -4,39 +4,31 @@ theme = "hugo-pillow"
 baseURL = "https://pillowbeast.github.io/"
 
 [params]
-    [params.costumisation]
-        primaryColor = "#8ED6CB"
-        secondaryColor = "#8F45A5"
-        footerText = "Crafted with ❤︎ in Zurich."
-    [params.contact]
-        name = "Yannik Werner"
-        email = "yannik.werner@yahoo.de"
-        # phone = "+00 000 00 00"
-        adress = "Zurich, Switzerland"
-    # Add your social media links here, these will be added to the footer.
-    [params.profiles]
-        spotify = "https://https://open.spotify.com/user/pillowbeast"
-        github = "https://github.com/pillowbeast"
-        linkedin = "https://www.linkedin.com/in/yannik-werner"
-        email = "mailto:yannik.werner@yahoo.de"
-        instagram = "https://www.instagram.com/wernihetmegerni/"
-
-# TODO: implement settings
-# [settings]
-#     ShowShareButtons = true
-#     ShowReadingTime = true
-#     ShowPostNavLinks = true
-#     ShowBreadCrumbs = true
-#     ShowCodeCopyButtons = true
+[params.costumisation]
+primaryColor = "#8ED6CB"
+secondaryColor = "#8F45A5"
+footerText = "Crafted with ❤︎ in Zurich."
+[params.contact]
+name = "Yannik Werner"
+email = "yannik.werner@yahoo.de"
+# phone = "+00 000 00 00"
+adress = "Zurich, Switzerland"
+# Add your social media links here, these will be added to the footer.
+[params.profiles]
+spotify = "https://https://open.spotify.com/user/pillowbeast"
+github = "https://github.com/pillowbeast"
+linkedin = "https://www.linkedin.com/in/yannik-werner"
+email = "mailto:yannik.werner@yahoo.de"
+instagram = "https://www.instagram.com/wernihetmegerni/"
 
 ignoreLogs = ["warning-goldmark-raw-html"]
 enableGitInfo = true
 
 [markup]
-    [markup.highlight]
-        # style = "rose-pine-dawn"
-        noClasses=false
+[markup.highlight]
+# style = "rose-pine-dawn"
+noClasses = false
 
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
