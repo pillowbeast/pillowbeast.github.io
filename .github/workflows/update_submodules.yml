@@ -5,6 +5,10 @@ on:
   #   - cron: '0 0 * * *' # Run at midnight UTC daily
   workflow_dispatch: # Allow manual triggering
 
+permissions:
+  contents: write # Push the new submodule pin
+  actions: write # Start the deploy workflow
+
 jobs:
   update-submodules:
     runs-on: ubuntu-latest
@@ -13,13 +17,27 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
+        ref: main
         submodules: true # Ensure submodules are initialized
 
     - name: Update submodules
+      id: update
       run: |
-        git submodule update --remote --merge
-        git add .
-        git commit -m "Update submodules to latest version" || echo "No changes to commit"
+        git submodule update --remote
+        if git diff --quiet; then
+          echo "Submodules already up to date"
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git commit -am "Update: Theme"
         git push origin main
+        echo "changed=true" >> "$GITHUB_OUTPUT"
+
+    # A push made with GITHUB_TOKEN does not trigger deploy.yml, so start it explicitly.
+    - name: Trigger deploy
+      if: steps.update.outputs.changed == 'true'
+      run: gh workflow run deploy.yml --ref main
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
