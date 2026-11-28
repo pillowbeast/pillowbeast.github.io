@@ -1,0 +1,138 @@
+<!doctype html><html><head><meta charset=UTF-8><meta name=viewport content width=device-width, initial-scale=1><title>Commands Dump · Yannik's Portfolio</title><link rel=icon type=image/png sizes=32x32 href=https://pillowbeast.github.io/favicon_io/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://pillowbeast.github.io/favicon_io/favicon-16x16.png><link rel=apple-touch-icon href=https://pillowbeast.github.io/favicon_io/apple-touch-icon.png><link rel=icon type=image/png sizes=192x192 href=https://pillowbeast.github.io/favicon_io/android-chrome-192x192.png><link rel=icon type=image/png sizes=512x512 href=https://pillowbeast.github.io/favicon_io/android-chrome-512x512.png><style>:root{--primary-color:#8ED6CB;--secondary-color:#8F45A5;--footer-text:"Crafted with ❤︎ in Zurich."}</style><link rel=stylesheet href=https://pillowbeast.github.io/css/main.css><link id=syntax-theme rel=stylesheet href=/css/syntax_light.css><script type=module src=https://pillowbeast.github.io/js/main.min.ce5e82b83a52deabd0e343eb47fe9b015d123ab5bb3d8c3257461951f6b745f1.js></script></head><body><button id=move-up-button class=not-visible>❯</button>
+<button id=move-down-button class=not-visible>❮</button><div id=wrapper><header><div class=header-container><div class=header-title><a href=https://pillowbeast.github.io/><b>Yannik's Portfolio</b>
+</a><button class="dark-mode-toggle icon">
+<img alt=DarkMode id=dark-mode-toggle-img data-moon=https://pillowbeast.github.io/icons/moon-solid.svg data-sun=https://pillowbeast.github.io/icons/sun-solid.svg></button></div><nav><a href=https://pillowbeast.github.io/blog/>Blog</a>
+<a href=https://pillowbeast.github.io/retro/>Retro</a>
+<a href=https://pillowbeast.github.io/project/>Project</a>
+<a href=https://pillowbeast.github.io/book/>Book</a>
+<a href=https://pillowbeast.github.io/recipe/>Recipe</a>
+<a href=https://pillowbeast.github.io/about/>About</a></nav><button class=menu-button>
+<img src=https://pillowbeast.github.io/icons/bars-solid.svg alt=menu></button></div></header><main><div class=main-container><h1>Commands Dump</h1><p class=page-summary>A Note about any topic.</p><div class=tags-and-categories><div class=tags><div class=icon><img class=no-overlay src=https://pillowbeast.github.io/icons/folder-solid.svg alt=Calendar-Date></div><p></p><div class=category><p><a href=/categories/programming>Programming</a></p></div><p>•</p><div class=category><p><a href=/categories/cli>CLI</a></p></div></div></div><div class=tags-and-categories><div class=categories><div class=icon><img class=no-overlay src=https://pillowbeast.github.io/icons/tag-solid.svg alt=Calendar-Date></div><p></p><div class=tag><p><a href=/tags/ffmpeg>FFMPEG</a></p></div><p>•</p><div class=tag><p><a href=/tags/pdftk>PDFTK</a></p></div></div></div><div class=metadata-line><div class=metadata-entry><div class=icon><img class=no-overlay src=https://pillowbeast.github.io/icons/calendar-solid.svg alt=Last-Modified></div><p>28.01.2025</p></div></div><hr class=first-hr><h2 id=why>Why?</h2><p>Over the years you keep stumbling over the same commands on StackOverflow, this is a website to quickly look up the most important commands that I might want to reuse.</p><hr><h3 id=ffmpeg>FFMPEG</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Extract Frames</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>ffmpeg -ss 00:53 -t 00:01 -i &lt;input_video&gt;.mp4 &lt;output_path&gt;/&lt;output_file_name&gt;%05d.png
+</span></span></code></pre></div><p>Package for Linux that let&rsquo;s you do video manipulation, such as cutting and extraction of frames. The <strong>%05d</strong> generates images wiht the naming convention of counting up from 0 in a format with 5 leading zeros.</p><h3 id=pdftk>PDFTK</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Combine PDFS</span>
+</span></span><span class=line><span class=cl>sudo apt install pdftk-java
+</span></span><span class=line><span class=cl>pdftk &lt;1.pdf&gt; &lt;2.pdf&gt; &lt;3.pdf&gt; cat output &lt;merged&gt;.pdf
+</span></span><span class=line><span class=cl>pdftk *.pdf cat output merged.pdf  <span class=c1># Merge in alphabetical order.</span>
+</span></span></code></pre></div><p>Package for Linux that let&rsquo;s you combine two pdfs into one.</p><h3 id=eth>ETH</h3><p>EULER, VPN</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Run Euler</span>
+</span></span><span class=line><span class=cl>ssh username@euler.ethz.ch
+</span></span><span class=line><span class=cl><span class=c1># Use VPN -&gt; Install the cisco client</span>
+</span></span><span class=line><span class=cl><span class=c1># connect to</span>
+</span></span><span class=line><span class=cl>sslvpn.ethz.ch/student-net
+</span></span></code></pre></div><h3 id=python-venv>Python VENV</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>python3 -m venv .venv
+</span></span><span class=line><span class=cl><span class=nb>source</span> .venv/bin/activate <span class=c1># Linux / MacOS</span>
+</span></span><span class=line><span class=cl>pip install -r requirements.txt
+</span></span></code></pre></div><h3 id=python-miniforgemamba>Python Miniforge/Mamba</h3><p>We install Miniforge and Mamba so that we only use Conda-Forge as our channel, so that only open-source distributions are used and so that we can benefit from the speed of Mamba.</p><p>Installation</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Where to put Miniforge</span>
+</span></span><span class=line><span class=cl><span class=nb>export</span> <span class=nv>CONDA_ROOT</span><span class=o>=</span><span class=s2>&#34;/opt/miniforge3&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Prepare the directory</span>
+</span></span><span class=line><span class=cl>sudo mkdir -p <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl>sudo chown <span class=s2>&#34;</span><span class=nv>$USER</span><span class=s2>&#34;</span>:<span class=s2>&#34;</span><span class=nv>$USER</span><span class=s2>&#34;</span> <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Download the latest installer for Linux x86-64</span>
+</span></span><span class=line><span class=cl>curl -LO https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+</span></span><span class=line><span class=cl><span class=c1># Install silently (-b) into $CONDA_ROOT</span>
+</span></span><span class=line><span class=cl>bash Miniforge3-Linux-x86_64.sh -b -p <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># Write the new init stub into ~/.bashrc (or ~/.zshrc) …</span>
+</span></span><span class=line><span class=cl><span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>/bin/conda&#34;</span> init
+</span></span><span class=line><span class=cl><span class=c1># …then start a fresh shell so the new PATH is in effect</span>
+</span></span><span class=line><span class=cl><span class=nb>exec</span> <span class=s2>&#34;</span><span class=nv>$SHELL</span><span class=s2>&#34;</span> -l
+</span></span><span class=line><span class=cl><span class=c1># Check channels</span>
+</span></span><span class=line><span class=cl>conda config --show channels
+</span></span><span class=line><span class=cl><span class=c1># Install Mamba into base</span>
+</span></span><span class=line><span class=cl>conda activate base
+</span></span><span class=line><span class=cl>conda install -n base mamba -c conda-forge
+</span></span><span class=line><span class=cl><span class=c1># Make (&#34;mamba activate&#34; instead of &#34;conda activate&#34;)</span>
+</span></span><span class=line><span class=cl>mamba shell init --shell bash --root-prefix <span class=s2>&#34;</span><span class=nv>$CONDA_ROOT</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=c1># then start a fresh terminal</span>
+</span></span><span class=line><span class=cl><span class=nb>exec</span> <span class=s2>&#34;</span><span class=nv>$SHELL</span><span class=s2>&#34;</span> -l
+</span></span><span class=line><span class=cl><span class=c1># so that it is not always active / this way we could potentially work in venvs locally</span>
+</span></span><span class=line><span class=cl>conda config --set auto_activate_base <span class=nb>false</span>
+</span></span></code></pre></div><p>Setup Environment.
+From scratch</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Create &amp; activate &#39;development&#39; env</span>
+</span></span><span class=line><span class=cl>mamba create -n &lt;env-name&gt; <span class=nv>python</span><span class=o>=</span>3.&lt;version-number&gt;
+</span></span><span class=line><span class=cl>mamba activate &lt;env-name&gt;
+</span></span><span class=line><span class=cl><span class=c1># Install involved libs in one go (better in one line)</span>
+</span></span><span class=line><span class=cl>mamba install <span class=s2>&#34;numpy=&lt;version-number&gt;&#34;</span> scipy ...
+</span></span><span class=line><span class=cl><span class=c1># Install any pip-only packages</span>
+</span></span><span class=line><span class=cl>pip install &lt;pypi-package&gt;
+</span></span><span class=line><span class=cl><span class=c1># Export for reproducibility</span>
+</span></span><span class=line><span class=cl>mamba env <span class=nb>export</span> -n &lt;env-name&gt; &gt; environment.yml
+</span></span></code></pre></div><p>From <strong>environment.yml</strong>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>mamba env create -f environment.yml
+</span></span><span class=line><span class=cl>mamba activate &lt;name&gt; <span class=c1># name from environment.yml</span>
+</span></span><span class=line><span class=cl>mamba env remove --name &lt;name&gt;
+</span></span></code></pre></div><h3 id=docker>Docker</h3><p>Setup Docker as rootful user (admin priviledges, if solo-developer on machine)</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Quick installer (skip the manual GPG steps)</span>
+</span></span><span class=line><span class=cl>curl -fsSL https://get.docker.com <span class=p>|</span> sudo sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Allow your user to run Docker without sudo  (rootful path)</span>
+</span></span><span class=line><span class=cl>sudo usermod -aG docker <span class=nv>$USER</span>
+</span></span><span class=line><span class=cl>newgrp docker   <span class=c1># or log out/in</span>
+</span></span><span class=line><span class=cl>docker context ls
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Test</span>
+</span></span><span class=line><span class=cl>docker run --rm hello-world
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Remove unused images/containers -&gt; Run from time to time.</span>
+</span></span><span class=line><span class=cl>docker system prune -af
+</span></span></code></pre></div><h3 id=git>GIT</h3><p>Configuration:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># global is not needed needed</span>
+</span></span><span class=line><span class=cl>git config --global user.name <span class=s2>&#34;Your Name&#34;</span>
+</span></span><span class=line><span class=cl>git config --global user.email <span class=s2>&#34;your.email@example.com&#34;</span>
+</span></span></code></pre></div><p>Proper Usage:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 0) make sure you’re up-to-date</span>
+</span></span><span class=line><span class=cl>git clone &lt;url&gt;
+</span></span><span class=line><span class=cl>git checkout main
+</span></span><span class=line><span class=cl>git pull origin main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 1) create &amp; switch to a new branch</span>
+</span></span><span class=line><span class=cl>git checkout -b my-feature
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2) do the work → add / commit as you go</span>
+</span></span><span class=line><span class=cl>git add .
+</span></span><span class=line><span class=cl>git commit -m <span class=s2>&#34;feat: implement X&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3) push branch to remote so others / CI can see it</span>
+</span></span><span class=line><span class=cl>git push -u origin my-feature   <span class=c1># -u sets upstream tracking</span>
+</span></span></code></pre></div><p>Pull Requests for Code Review (2 Options)</p><p>Either Open Pull Request for Code Review via the UI or</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>gh pr create
+</span></span></code></pre></div><p>Merging</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># 1) after work is approved, switch back to main</span>
+</span></span><span class=line><span class=cl>git checkout main
+</span></span><span class=line><span class=cl>git pull origin main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 2) merge the feature in</span>
+</span></span><span class=line><span class=cl>git merge my-feature
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 3) push updated main to the remote</span>
+</span></span><span class=line><span class=cl>git push origin main
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 4) clean up the branch</span>
+</span></span><span class=line><span class=cl>git branch -d my-feature        <span class=c1># delete local copy (-D to force if unmerged)</span>
+</span></span><span class=line><span class=cl>git push origin --delete my-feature   <span class=c1># remove remote branch</span>
+</span></span></code></pre></div><h3 id=eas-expo-build-tool>EAS (Expo Build Tool)</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>npm install -g eas-cli
+</span></span><span class=line><span class=cl>eas login 
+</span></span><span class=line><span class=cl>eas build:configure
+</span></span><span class=line><span class=cl>eas build -p android --profile production
+</span></span><span class=line><span class=cl>eas credentials  <span class=c1># Download your Android keystore (required for updating app on Play Store)</span>
+</span></span></code></pre></div><h3 id=appimage-updateinstallation>AppImage Update/Installation</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># Update Only</span>
+</span></span><span class=line><span class=cl>sudo find /opt -iname <span class=s2>&#34;*&lt;application_name&gt;*&#34;</span> 2&gt;/dev/null
+</span></span><span class=line><span class=cl>sudo rm -f /opt/&lt;application_name&gt;.AppImage
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Both</span>
+</span></span><span class=line><span class=cl>sudo mv ~/Downloads/&lt;application_name&gt;.AppImage /opt/&lt;application_name&gt;.AppImage 
+</span></span><span class=line><span class=cl>sudo chmod +x /opt/&lt;application_name&gt;.AppImage
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Installation Only</span>
+</span></span><span class=line><span class=cl>touch ~/.local/share/applications/&lt;application_name&gt;.desktop
+</span></span><span class=line><span class=cl>nano ~/.local/share/applications/&lt;application_name&gt;.desktop
+</span></span><span class=line><span class=cl><span class=c1># add text to .desktop file</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>Desktop Entry<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=nv>Name</span><span class=o>=</span>Cursor
+</span></span><span class=line><span class=cl><span class=nv>Exec</span><span class=o>=</span>/opt/Cursor.AppImage
+</span></span><span class=line><span class=cl><span class=nv>Icon</span><span class=o>=</span>/opt/cursor.png
+</span></span><span class=line><span class=cl><span class=nv>Type</span><span class=o>=</span>Application
+</span></span><span class=line><span class=cl><span class=nv>Categories</span><span class=o>=</span>Development<span class=p>;</span>IDE<span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nv>StartupNotify</span><span class=o>=</span><span class=nb>true</span>
+</span></span><span class=line><span class=cl><span class=nv>Terminal</span><span class=o>=</span><span class=nb>false</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Both</span>
+</span></span><span class=line><span class=cl>update-desktop-database ~/.local/share/applications/
+</span></span></code></pre></div></div></main><footer><div class=footer-container><p>Crafted with ❤︎ in Zurich.</p><div class=footer-icons><a href=https://https://open.spotify.com/user/pillowbeast target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/spotify.svg alt=Spotify>
+</a><a href=https://github.com/pillowbeast target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/github.svg alt=GitHub>
+</a><a href=https://www.linkedin.com/in/yannik-werner target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/linkedin.svg alt=LinkedIn>
+</a><a href=https://www.instagram.com/wernihetmegerni/ target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/instagram.svg alt=Instagram>
+</a><a href=mailto:yannik.werner@yahoo.de target=_blank rel=noopener class=icon><img src=https://pillowbeast.github.io/icons/envelope-solid.svg alt=Email></a></div></div></footer></div><div id=image-overlay class=image-overlay><div class=overlay-image-container><img id=overlay-image src alt="Fullscreen Image"></div></div></body></html>
