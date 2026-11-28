@@ -3,8 +3,15 @@ name: Publish Site to GitHub Pages
 on:
   push:
     branches:
-      - main # Trigger on changes to exampleSite
+      - main
   workflow_dispatch:
+
+# Rapid pushes (and theme-update + content) otherwise race on gh-pages:
+# peaceiris only force-pushes when force_orphan is set, so overlapping
+# deploys get "rejected (fetch first)".
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -15,13 +22,13 @@ jobs:
       uses: actions/checkout@v3
       with:
         ref: main
-        submodules: true # Ensure submodules are initialized
-        fetch-depth: 0 # Fetch all history for submodules
+        submodules: true
+        fetch-depth: 0
 
     - name: Set up Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: 'latest' # Specify a specific version if needed
+        hugo-version: 'latest'
 
     - name: Build Hugo Site
       run: hugo --minify
@@ -32,3 +39,4 @@ jobs:
         github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
+        force_orphan: true
